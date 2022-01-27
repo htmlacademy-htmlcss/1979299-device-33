@@ -69,6 +69,9 @@
 
             <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
+                <input class="range-price" type="range" min="0" max="5000" step="1" value="5000"> 
+                <span class="range-price-down">от 0</span>
+                <span class="range-price-up">до 5000</span>
             </fieldset>
 
             <fieldset class="catalog-filter-group">
@@ -233,15 +236,12 @@
               <li class="pagination-item">
                 <a class="pagination-link" href="#">15</a>
               </li>
-
-            <li class="pagination-item">
+              <li class="pagination-item">
               <a class="pagination-link pagination-next" href="#">
                 <span class="visually-hidden">Вперед</span>
               </a>
             </li>
           </ul>
-          <button class="button pagination-show-more" type="button">Показать ещё</button>
-
         </section>
 
 

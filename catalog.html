@@ -69,9 +69,15 @@
 
             <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
-                <input class="range-price" type="range" min="0" max="5000" step="1" value="5000"> 
-                <span class="range-price-down">от 0</span>
-                <span class="range-price-up">до 5000</span>
+            
+                <div>
+                    <img class="price-left" src="#" alt="нижний предел стоимости">
+                    <img class="price-line" src="#" alt="линия стоимости">
+                    <img class="price-right" src="#" alt="верхний предел стоимости">
+                </div>
+
+                <input class="range-price-down" type="button">от 0</input>
+                <input class="range-price-up" type="button">до 5000</input>
             </fieldset>
 
             <fieldset class="catalog-filter-group">

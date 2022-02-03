@@ -31,14 +31,14 @@ body {
 }
 
 
-#subscription-mail {
+.subscription-mail {
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
 }
 
-#subscription-mail::placeholder {
+.subscription-mail::placeholder {
     color: #444444;
     opacity: 0.5;
 }
@@ -250,7 +250,7 @@ body {
     text-decoration: none;
     color: inherit;
     background-color: inherit;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.2em;
 }
 
 .navigation-search-field {
@@ -346,9 +346,11 @@ body {
 .contacts-phone-link {
     font-family: "rubik", sans-serif;
     font-weight: 400;
-    font-size: 18px;
     font-style: normal;
+    font-size: 18px;
     line-height: 30px;
+    text-decoration: none;
+    color: #444444;
 }
 
 .subscription {

@@ -346,9 +346,11 @@ body {
 .contacts-phone-link {
     font-family: "rubik", sans-serif;
     font-weight: 400;
-    font-size: 18px;
     font-style: normal;
+    font-size: 18px;
     line-height: 30px;
+    text-decoration: none;
+    color: #444444;
 }
 
 .subscription {

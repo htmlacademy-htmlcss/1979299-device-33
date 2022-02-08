@@ -58,56 +58,90 @@ body {
     background: transparent;
 }
  
+.gallery {
+    display: flex;
+}
+
 .page-header {
     width: 1160px;
+    height: 300px;
     margin: 0 auto;
     color: #000000;
     background: #FFE17F;    
 }
 
 .navigation {
-    width: 1040px;
+    width: 1160x;
     margin: 0 auto;
     
 }
 
 .navigation-list {
     display: flex;
-    margin: 0;
+    width: 1160px;
+    margin: 0 auto;
     padding: 0;
-    margin-right: auto;
+    
 }
 
-
+.navigator-item {
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding: 0;
+}
 
 .search {
     width: 517px;
-    margin: 26px;
+    margin-right: 26px;
+    margin-left: 60px;
+
 }
 
 .come-in {
     width: 231px;
+    margin-right: 26px;
 }
 
 .compare {
     width: 105px;
+    margin-right: 36px;
 }
 
 .basket {
     width: 74px;
+    margin-right: 60px;
 }
 
 .navigation-list-user {
     display: flex;
-    justify-content: space-between;
-    width: 1040;
+    width: 1160px;
     margin: 0;
     padding: 0;
 }
 
+.navigator-item-user {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+} 
+
 .catalog-user {
     width: 293px;
+    margin-right: 276px;
+    margin-left: 60px;
 }
+
+.service-user {
+    width: 127px;
+    margin-right: 45px;
+}
+
+.navigator-item-user:nth-child(4) {
+    margin-right: 60px;
+}
+
 
 .in-the-basket {
     font-size: 14px;
@@ -494,6 +528,10 @@ body {
     margin-right: 112px;
 }
 
+.footer-social-list {
+    display: flex;
+}
+
 .footer-contacts-address {
     line-height: 19px;
     color: #FFFFFF;
@@ -502,6 +540,7 @@ body {
 }
 
 .fotter-scroll-list {
+    display: flex;
     margin-left: auto;
     width: 444px;
 }
@@ -576,6 +615,15 @@ body {
     color: inherit;
     background-color: #000000;
     text-transform: uppercase;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.monopods-list {
+    display: flex;
 }
 
 .pagination-link {

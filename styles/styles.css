@@ -158,12 +158,18 @@ body {
 
 .gallery {
     display: flex;
+    width: 1160px;
    
 }
 
 .slider-prev {
     margin: 211px 0 289px 30px;
     align-self: center;
+    
+}
+
+.slider-button {
+    padding: 0;
 }
 
 .slider-next {
@@ -191,7 +197,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 560px;
-    margin-left: auto;
+    
+    
 }
 
 .services {
@@ -264,7 +271,14 @@ body {
     letter-spacing: 0.2em;
 }
 
+
+.namber-one-device-list li {
+    margin: 0;
+    padding: 0;
+}
+
 .short-description-number-item {
+    margin-right: 49px;
     font-family: "rubik", sans-serif;
     font-weight: 700;
     font-size: 180px;
@@ -276,6 +290,7 @@ body {
 }
 
 .short-description-figurative-description-item {
+    width: 545px;
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;

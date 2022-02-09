@@ -56,16 +56,21 @@
         <h2 class="visually-hidden">Фотогалерея"</h2>   
         <section class="gallery">
           
-            <button class="slider-button slider-prev" type="button">
+          <div class="slider-prev">
+            <button class="slider-button" type="button">
             <img class="slider-button slider-prev-press" src="images/main-images/left-arrow.svg" width="20" height="60" alt="Предыдущее фото">
             </button>
+          </div>
+            
 
             <img class="slider-image" src="images/main-images/quadrocopter.png" width="560" height="560" alt="Образец девайся Квадрокоптер">
-
-            <button class="slider-button slider-next" type="button">
+            <div class="slider-next">
+              <button class="slider-button" type="button">
             <img class="slider-button slider-next-press" src="images/main-images/right-arrow.svg" width="20" height="60" alt="Следующее фото"> 
             </button>
-          
+            </div>
+            
+            
         
         <div class="short-description">
           <h2 class="visually-hidden">Описание девайса</h2>
@@ -75,13 +80,16 @@
            <li class="short-description-device-description-item">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</li>
          </ul>
           <button class="gallery-more" type="button">Подробнее</button>
-         <form action="https://echo.htmlacademy.ru">
-          <input class="select" type="radio" value="select-left" checked> 
-          <input class="select" type="radio" value="select-center"> 
-          <input class="select" type="radio" value="select-right">
-         </form>
 
-         <table class="short-description slaider-table">
+          <div class="select-container">
+            <form action="https://echo.htmlacademy.ru">
+               <input class="select" type="radio" value="select-left" checked> 
+               <input class="select" type="radio" value="select-center"> 
+               <input class="select" type="radio" value="select-right">
+            </form>
+             </div>
+
+         <table class="short-description-slaider-table">
           <thead class="slider-table-head">
             <tr class="slider-table-row">
               <th class="slider-table-row-title">Дальность полета</th>
@@ -153,10 +161,8 @@
         <p class="short-description-device-description-item">Мы с удовольствием доставим ваш товар прямо<br>
           к вашему подъезду совершенно бесплатно! Ведь<br>
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
         <img class="courier" src="images/main-images/delivery/delivery-man.svg" width="136" height="164" alt="Иконка курьера">
-        </div>
-        
-      
       </section>
 
       <div class="order">
@@ -210,9 +216,15 @@
       
       <section class="subscription">
         <h2 class="visually-hidden">Подписка</h2>
+       
+        <div class="about-us-canteiner">
         <p class="about-us-title">Подпишитесь
           на рассылку</p>
+        <p class="about-us-paragraph">Еженедельный дайджест с обзорами новинок,<br>
+            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        </div>
 
+        <div class="about-us-canteiner">
           <form class="subscription-form" action="#" method="post">
             <label>
               <input class="subscription-mail" type="text" name="subscription-mail" placeholder="Ваш e-mail">
@@ -220,49 +232,44 @@
             <button class="button" type="submit">Подписаться</button>
           </form>
 
-          <p class="about-us-paragraph">Еженедельный дайджест с обзорами новинок,<br>
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+         
           <img class="subscription-img" src="images/main-images/check-mark.svg" width="14" height="14" alt="галочка">
           <span class="about-us-paragraph">Это бесплатно</span>
+
+        </div>
+          
       </section>
-
-
-      </div>
-     
+ 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer-container">
 
-       
+        <div class="footer-logo-container">
+        <a href="#"><img class="footer-logo" src="images/footer-images/logo-device-2.svg" width="144.9" height="36" alt="Логотип сайта"></a>
+        </div>
 
-      <div class="footer-address-container">
-        <img class="footer-logo" src="images/footer-images/logo-device-2.svg" width="144.9" height="36" alt="Логотип сайта"></a>
+        <div class="footer-address-container">
         <section class="footer-address">
         <h2 class="visually-hidden">Адрес</h2>
         <address class="footer-contacts-address">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </address>  
         </section>
-
-        <img class="footer-line" src="images/footer-images/yellow-line.svg" width="80" height="7" alt="желтый отрезок">
-      </div>
-      
-
-      <section class="fotter-scroll">
+        <section class="fotter-scroll">
         <h2 class="visually-hidden">Список подвала</h2>
         <ul class="fotter-scroll-list">
           <li class="fotter-scroll-item"><a class="fotter-scroll-link" href="#">Доставка</a></li>
           <li class="fotter-scroll-item"><a class="fotter-scroll-link" href="#">Гарантия</a></li>
           <li class="fotter-scroll-item"><a class="fotter-scroll-link" href="#">Контакты</a></li>
         </ul>
-      </section>
-
+        </section>
         <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-      
-      
+      </div>
 
-      <section class="footer-social">
+        <div class="footer-social-container">
+          <img class="footer-line" src="images/footer-images/yellow-line.svg" width="80" height="7" alt="желтый отрезок">
+        <section class="footer-social">
         <h2 class="visually-hidden">Соц сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -287,6 +294,9 @@
         </section>
 
           <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-img" src="images/footer-images/logo-htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy"></a>
+
+        </div>
+        
       </div>
       
     </footer>

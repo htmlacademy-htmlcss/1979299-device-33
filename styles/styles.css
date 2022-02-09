@@ -58,9 +58,6 @@ body {
     background: transparent;
 }
  
-.gallery {
-    display: flex;
-}
 
 .page-header {
     width: 1160px;
@@ -68,6 +65,10 @@ body {
     margin: 0 auto;
     color: #000000;
     background: #FFE17F;    
+}
+
+.header-logo {
+    margin-left: 60px;
 }
 
 .navigation {
@@ -153,6 +154,21 @@ body {
     width: 1160px;
     margin: 0 auto;
 
+}
+
+.gallery {
+    display: flex;
+   
+}
+
+.slider-prev {
+    margin: 211px 0 289px 30px;
+    align-self: center;
+}
+
+.slider-next {
+    margin: 211px 0 289px 0;
+    align-self: center;
 }
 
 

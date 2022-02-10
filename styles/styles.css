@@ -41,6 +41,7 @@ body {
 
 
 .subscription-mail {
+    width: 100%;
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -59,6 +60,12 @@ body {
     background: transparent;
 }
  
+.device {
+    width: 1160px;
+    margin: auto;
+}
+
+
 
 .page-header {
     width: 1160px;
@@ -93,11 +100,20 @@ body {
     padding: 0;
 }
 
+.search form {
+    display: flex;
+    width: 100%;
+
+}
+
 .search {
     width: 517px;
-    
     margin-left: 60px;
 
+}
+
+.search label {
+    flex-grow: 1;
 }
 
 .come-in {
@@ -160,6 +176,7 @@ body {
 .gallery {
     display: flex;
     width: 1160px;
+    margin: auto;
    
 }
 
@@ -247,6 +264,8 @@ body {
 
 .services {
     display: flex;
+    
+    justify-content: center;
     
     
     margin: 0 auto;
@@ -526,6 +545,7 @@ body {
 }
 
 .navigation-search-field {
+    width: 100%;
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -657,7 +677,12 @@ about-us-canteiner .about-us-paragraph {
 }
 
 .subscription-form {
+    display: flex;
     width: 810px;
+}
+
+.subscription-form label {
+    flex-grow: 1;
 }
 
 .subscription-img {
@@ -669,10 +694,9 @@ about-us-canteiner .about-us-paragraph {
 
 }
 
-page-footer-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 140px;
+.page-footer-container {
+    width: 1160px;
+    margin: auto;
 
 }
 

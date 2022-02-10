@@ -95,23 +95,24 @@ body {
 
 .search {
     width: 517px;
-    margin-right: 26px;
+    
     margin-left: 60px;
 
 }
 
 .come-in {
     width: 231px;
-    margin-right: 26px;
+    margin-left: 26px;
 }
 
 .compare {
     width: 105px;
-    margin-right: 36px;
+    margin-left: 26px;
 }
 
 .basket {
     width: 74px;
+    margin-left: 36px;
     margin-right: 60px;
 }
 
@@ -288,6 +289,10 @@ body {
 
 }
 
+.exit {
+    width: 56px;
+    margin-left: 0;
+}
 
 .navigation-link-exit {
     font-family: "rubik", sans-serif;

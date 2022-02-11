@@ -347,6 +347,11 @@ body {
     flex-grow: 1;
 }
 
+.main-container > div {
+    width: 1160px;
+    margin: auto;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -783,14 +788,13 @@ about-us-canteiner .about-us-paragraph {
 
 .filter {
     display: flex;
-    
     background: #F0F0F0;
 }
 
 .filter-container {
     display: flex;
-    flex-direction: column;
-    
+    width: 1160px;
+    margin: auto; 
 }
 
 .product {

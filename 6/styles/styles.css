@@ -272,6 +272,13 @@ body {
     background-color: #F0F0F0;
 }
 
+.services div {
+    display: flex;
+    width: 1160px;
+    justify-content: space-between;
+}
+
+
 .services-delivery-item {
     width: 280px;
     margin-left: 140px;
@@ -775,7 +782,15 @@ about-us-canteiner .about-us-paragraph {
 }
 
 .filter {
+    display: flex;
+    
     background: #F0F0F0;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .product {
@@ -837,5 +852,6 @@ about-us-canteiner .about-us-paragraph {
 }
 
 .pagination {
+    display: flex;
     background: #EBEBEB;
 }

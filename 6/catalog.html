@@ -54,7 +54,7 @@
     </nav>
   </header>
 
-      <main class="catalog">
+      <main class="catalog main-container">
         <div>
           <h1 class="about-us-title">Моноподы для селфи</h1>
           <ul class="monopods-list">
@@ -73,10 +73,12 @@
        
 
         <section class="filter">
-            <h2 class="filter-title">фильтр:</h2>
+          <div class="filter-container">
+             <h2 class="filter-title">фильтр:</h2>
 
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
+          
+          
             <fieldset class="catalog-filter-group">
                 <legend class="about-us-name">Стоимость</legend>
             
@@ -153,7 +155,7 @@
             </fieldset>
             <button class="about-us-link" type="submit">Показать</button>
         </form>
-
+      </div>
         <section class="sorting">
           <h2 class="filter-title">сортировка:</h2>
           <select class="select-control" name="сортировка:">
@@ -205,9 +207,8 @@
           </ul>      
           
           <button class="button-product" type="submit">загрузить ещё</button>
-        </section>
-        
-        <ul class="pagination">
+
+          <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link" href="#">Назад</a>
             </li>
@@ -230,6 +231,11 @@
               <a class="pagination-link" href="#">Вперед</a>
             </li>
           </ul>
+
+
+        </section>
+        
+        
 
           </div>
          

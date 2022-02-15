@@ -436,7 +436,7 @@ div .navigation-link {
 
 .short-description-device-description-item {
     margin-top: 29px;
-    margin-bottom: 151px;
+    margin-bottom: 51px;
     width: 452px;
     font-family: "rubik", sans-serif;
     font-weight: 400;
@@ -450,6 +450,7 @@ div .navigation-link {
 .courier {
     margin-right: 63px;
     margin-left: 106px;
+    margin-top: -25px;
 }
 
 .order {
@@ -819,6 +820,7 @@ div .navigation-link {
 .footer-address-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 63px;
 }
 
 
@@ -826,13 +828,14 @@ div .navigation-link {
     line-height: 19px;
     color: #FFFFFF;
     font-style: normal;
-
+    width: 240px;
 }
 
 .fotter-scroll-list {
     display: flex;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
     width: 444px;
     list-style-type: none;
 }
@@ -855,6 +858,7 @@ div .navigation-link {
 .footer-social-container {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .footer-social-list {
@@ -863,6 +867,19 @@ div .navigation-link {
     list-style-type: none;
 }
 
+.footer-social-item {
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+}
+
+div .monopod-header {
+    margin: 0;
+    padding: 0;
+    margin-top: 35px;
+    margin-bottom: 16px;
+    margin-left: 50px;
+}
 
 .monopods-link {
     font-family: "rubik", sans-serif;
@@ -917,6 +934,15 @@ div .navigation-link {
     text-decoration: none;
 }
 .button-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 760px;
+    height: 55px;
+    border: 3px solid #E5E5E5;
+    box-sizing: border-box;
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 16px;
@@ -924,7 +950,6 @@ div .navigation-link {
     letter-spacing: 0.2em;
     text-align: center;
     color: inherit;
-    background-color: #000000;
     text-transform: uppercase;
 }
 
@@ -936,10 +961,30 @@ div .navigation-link {
 
 .monopods-list {
     display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    width: 541px;
+    justify-content: space-between;
     list-style-type: none;
 }
 
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 760px;
+    height: 71px;
+    margin: auto;
+}
+
+.pagination-item:not(:first-child),
+.pagination-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
 .pagination-link {
+   
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -965,5 +1010,8 @@ div .navigation-link {
 
 .pagination {
     display: flex;
+    margin: 0;
+    padding: 0%;
+    list-style-type: none;
     background: #EBEBEB;
 }

@@ -54,6 +54,8 @@ body {
     opacity: 0.5;
 }
 
+
+
 .input-form {
     font-family: "rubik", sans-serif;
     font-size: 16px;
@@ -523,10 +525,6 @@ div .navigation-link {
     margin-bottom: 30px;
 }
 
-.about-us-canteiner .about-us-paragraph {
-    width: 560px;
-    margin: 74px 0 144px 140px;
-}
 
 .about-us-list {
     margin: 0;
@@ -565,21 +563,40 @@ div .navigation-link {
     letter-spacing: 0.2em;
 }
 
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    height: 421px;
+    background-color: #F0F0F0;
+}
+
+
 .about-us-canteiner {
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
+    width: 1160px;
+    margin-top: 64px;
+    margin-bottom: 144px; 
 }
 
 
 .about-us-canteiner .about-us-title {
     width: 348px;
+    margin: 0;
+    padding: 0;
+  
 }
 
-about-us-canteiner .about-us-paragraph {
+.about-us-canteiner .about-us-paragraph {
     width: 560px;
     margin-left: 252px;
 }
+
+
+
+
+
 
 .contacts-phone-link {
     font-family: "rubik", sans-serif;
@@ -752,16 +769,9 @@ about-us-canteiner .about-us-paragraph {
 
 
 
-.subscription {
-    display: flex;
-    flex-direction: column;
-    height: 421px;
-    background-color: #F0F0F0;
-
-
-}
 
 .button {
+    width: 253px;
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -800,9 +810,15 @@ about-us-canteiner .about-us-paragraph {
 
 }
 
+.footer-logo-container {
+    display: flex;
+    margin-top: 62px;
+    margin-bottom: 35px;
+}
+
 .footer-address-container {
     display: flex;
-    
+    justify-content: space-between;
 }
 
 

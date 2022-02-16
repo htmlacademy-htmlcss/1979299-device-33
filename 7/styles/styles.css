@@ -355,7 +355,6 @@ div .navigation-link {
 }
 
 .main-container > div {
-    width: 1160px;
     margin: auto;
 }
 
@@ -570,6 +569,16 @@ div .navigation-link {
     flex-direction: column;
     height: 421px;
     background-color: #F0F0F0;
+}
+
+.subscription div {
+    width: 1160px;
+    margin: auto;
+}
+
+.sorting div {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -910,7 +919,6 @@ div .monopod-header {
 }
 
 .filter {
-    display: flex;
     background: #F0F0F0;
 }
 

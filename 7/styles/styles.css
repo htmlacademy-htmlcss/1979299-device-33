@@ -159,8 +159,9 @@ div .navigation-link {
 }
 
 .navigator-item-user {
-    display: flex;
-    align-items: center;
+    display: block;
+    padding: 14px 0 14px 0;
+    margin-top: 30px;
     margin: 0;
     padding: 0;
 } 
@@ -372,9 +373,6 @@ div .navigation-link {
   }
 
 .navigation-link-user {
-    display: block;
-    padding: 14px 0 14px 0;
-    margin-top: 30px;
     font-family: "raleway", sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -436,7 +434,6 @@ div .navigation-link {
 .short-description-device-description-item {
     margin-top: 29px;
     margin-bottom: 51px;
-    width: 452px;
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -483,6 +480,7 @@ div .navigation-link {
     justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 70px;
+    width: 1160px;
 
 }
 
@@ -581,6 +579,15 @@ div .navigation-link {
     justify-content: space-between;
 }
 
+.about-us-name-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us-name {
+    width: 220px;
+}
 
 .about-us-canteiner {
     display: flex;
@@ -600,7 +607,7 @@ div .navigation-link {
 
 .about-us-canteiner .about-us-paragraph {
     width: 560px;
-    margin-left: 252px;
+    margin-left: 16.5px;
 }
 
 
@@ -761,7 +768,13 @@ div .navigation-link {
     opacity: 0.3;
 }
 
+form .catalog-filter-group:first-child {
+    display: flex;
+}
 
+.catalog-filter-group, .catalog-filter-list {
+    list-style-type: none
+}
 
 .contacts-address .about-us-paragraph {
     font-style: normal;  
@@ -867,6 +880,7 @@ div .navigation-link {
 .footer-social-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
 
@@ -1018,8 +1032,17 @@ div .monopod-header {
 
 .pagination {
     display: flex;
+    width: 100%;
     margin: 0;
     padding: 0%;
     list-style-type: none;
     background: #EBEBEB;
+}
+
+.pagination-item:first-child {
+    margin-right: auto;
+}
+
+.pagination-item:last-child {
+    margin-left: auto;
 }

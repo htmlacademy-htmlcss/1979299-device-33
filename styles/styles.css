@@ -159,10 +159,10 @@ div .navigation-link {
 }
 
 .navigator-item-user {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 14px 0 14px 0;
     margin-top: 30px;
-    margin: 0;
     padding: 0;
 } 
 
@@ -569,7 +569,7 @@ div .navigation-link {
     background-color: #F0F0F0;
 }
 
-.subscription div {
+.subscription > div {
     width: 1160px;
     margin: auto;
 }
@@ -771,6 +771,11 @@ div .navigation-link {
 form .catalog-filter-group:first-child {
     display: flex;
 }
+
+.catalog > div {
+    width: 1160px;
+}
+
 
 .catalog-filter-group, .catalog-filter-list {
     list-style-type: none

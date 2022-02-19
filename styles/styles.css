@@ -949,7 +949,28 @@ div .monopod-header {
 
 .product {
     background-color: #FFFFFF;
+    width: 840px;
 }
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 70px;
+}
+
+.product-card {
+    width: 360px;
+    margin-bottom: 44px;
+}
+
+
+
 
 .product-card-link {
     font-family: "rubik", sans-serif;
@@ -980,11 +1001,7 @@ div .monopod-header {
     text-transform: uppercase;
 }
 
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
+
 
 .monopods-list {
     display: flex;

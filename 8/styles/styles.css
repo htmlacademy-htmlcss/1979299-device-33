@@ -538,6 +538,8 @@ div .navigation-link {
 
 
 .about-us-name {
+    grid-row: 2;
+    width: 220px;
     font-family: "rubik", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -579,15 +581,6 @@ div .navigation-link {
     justify-content: space-between;
 }
 
-.about-us-name-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.about-us-name {
-    width: 220px;
-}
 
 .about-us-canteiner {
     display: flex;
@@ -609,9 +602,6 @@ div .navigation-link {
     width: 560px;
     margin-left: 16.5px;
 }
-
-
-
 
 
 
@@ -949,6 +939,7 @@ div .monopod-header {
 
 
 .product {
+    flex-direction: column;
     background-color: #FFFFFF;
     width: 840px;
 }
@@ -967,6 +958,8 @@ div .monopod-header {
 
 
 .product-card-link {
+    display: grid;
+    grid-template-columns: auto auto;
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -995,6 +988,14 @@ div .monopod-header {
     text-transform: uppercase;
 }
 
+.product-card-image {
+    grid-column: 1/-1;
+}
+
+.product-card-price {
+    align-self: center;
+    text-align: right;
+}
 
 .monopods-list {
     display: flex;

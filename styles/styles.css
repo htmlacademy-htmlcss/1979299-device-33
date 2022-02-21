@@ -939,6 +939,7 @@ div .monopod-header {
 
 
 .product {
+    flex-direction: column;
     background-color: #FFFFFF;
     width: 840px;
 }

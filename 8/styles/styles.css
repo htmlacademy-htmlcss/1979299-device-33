@@ -947,27 +947,23 @@ div .monopod-header {
     margin: auto; 
 }
 
+
 .product {
     background-color: #FFFFFF;
     width: 840px;
 }
 
 .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 360px); 
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 70px;
+    gap: 44px;
+    margin: 70px 40px 44px;
 }
+   
 
-.product-card {
-    width: 360px;
-    margin-bottom: 44px;
-}
 
 
 .product-card-link {

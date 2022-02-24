@@ -285,14 +285,32 @@ div .navigation-link {
 
 .services-delivery-item {
     width: 280px;
-    margin-left: 140px;
-    margin-top: -20px;
+    
+    margin-top: -30px;
 }
+
+.services-delivery-item a {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFE17F;
+    background-color: #000000;  
+
+}
+
+.services-delivery {
+    padding: 9px 120px 11px 10px;
+}
+
 
 .services-item {
     margin-top: 35px;
     width: 160px;
-    margin-left: 140px;
+    
 }
 
 .services-list {
@@ -304,6 +322,23 @@ div .navigation-link {
     list-style-type: none;
     
 }
+
+.services-link {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    background-color: #FFE17F;
+    padding: 10px 7.64px;
+
+
+}
+
+
 
 .delivery {
     display: flex;
@@ -408,7 +443,7 @@ div .navigation-link {
 .short-description-figurative-description-item {
     display: block;
     margin-top: 0;
-    margin-bottom: 29px;
+
     margin-right: 15px;
     width: 545px;
     font-family: "raleway", sans-serif;
@@ -441,6 +476,11 @@ div .navigation-link {
     color: #444444;
     background-color: inherit;
     text-align: left;
+}
+
+.delivery .short-description-device-description-item {
+    margin-bottom: 200px;
+    margin-top: 34px;
 }
 
 .courier {
@@ -519,7 +559,7 @@ div .navigation-link {
 }
 
 .about-us .about-us-paragraph,
-.contacts .about-us-paragraph:nth-child(2) {
+.contacts .about-us-paragraph:nth-child(2)  {
     margin-bottom: 30px;
 }
 
@@ -536,8 +576,12 @@ div .navigation-link {
     padding-left: 26px;
 }
 
+.about-us-item:last-child {
+    margin-bottom: 0;
+}
 
 .about-us-name {
+
     grid-row: 2;
     width: 220px;
     font-family: "rubik", sans-serif;
@@ -550,6 +594,7 @@ div .navigation-link {
 }
 
 .about-us-link {
+    display: inline-block;
     margin-top: 30px;
     font-family: "raleway", sans-serif;
     font-weight: 800;
@@ -561,6 +606,9 @@ div .navigation-link {
     color: inherit;
     background-color: #FFE17F;
     letter-spacing: 0.2em;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -619,7 +667,7 @@ div .navigation-link {
 .gallery-more {
     width: 220px;
     height: 40px;
-    padding: 0;
+    padding: 10px 5px;
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -629,6 +677,8 @@ div .navigation-link {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    border: none;
+    cursor: pointer;
 }
 
 .select-container {
@@ -690,36 +740,6 @@ div .navigation-link {
     background-color: inherit;
     text-decoration: none;
     letter-spacing: -0.02em;
-}
-
-
-
-.services-delivery-item a {
-    font-family: "raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #FFE17F;
-    background-color: #000000;
-    
-
-}
-
-.services-link {
-    font-family: "raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: inherit;
-    background-color: #FFE17F;
-
-
 }
 
 
@@ -879,10 +899,17 @@ form .catalog-filter-group:first-child {
     
 }
 
+.footer-line {
+    margin-bottom: 77px;
+}
+
 .footer-social-list {
     display: flex;
     width: 150px;
     list-style-type: none;
+    margin: 0;
+    margin-bottom: 61px;
+
 }
 
 .footer-social-item {
@@ -890,6 +917,11 @@ form .catalog-filter-group:first-child {
     height: 40px;
     margin: 15px;
 }
+
+.htmlacademy-link {
+    margin-bottom: 65px;
+}
+
 
 div .monopod-header {
     margin: 0;

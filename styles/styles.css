@@ -48,6 +48,22 @@ body {
     font-size: 18px;
     line-height: 30px;
     padding: 11px 447px 14px 16px;
+    background: transparent;
+    border: none;
+    border-bottom: solid 3px #C4C4C4;
+}
+
+.subscription-form .button {
+    border: 3px solid #CECECE;
+}
+
+.its-free {
+    display: flex;
+    align-items: center;
+}
+
+.its-free .about-us-paragraph {
+    width: auto;
 }
 
 .subscription-mail::placeholder {
@@ -63,7 +79,7 @@ body {
     background: transparent;
     padding: 10px 56px;
     border-radius: 0 50px 50px 0;
-    
+    border: 2px solid;
 }
 
 .navigation-icon {
@@ -179,6 +195,7 @@ div .navigation-link {
 } 
 
 .catalog-user {
+    justify-content: space-between;
     width: 293px;
     margin-right: 276px;
     margin-left: 60px;
@@ -217,20 +234,20 @@ div .navigation-link {
    
 }
 
-.slider-prev {
-    margin: 60px 0 289px 30px;
-    align-self: center;
-    
+.slider-container {
+    display: flex;
 }
 
 .slider-button {
     padding: 0;
+    background: transparent;
+    border: none;
+    align-self: flex-start;
+    margin-top: 25px;
 }
 
-.slider-next {
-    margin: 60px 0 289px 0;
-    align-self: center;
-}
+
+
 
 .slider-image {
     margin-top: -150px;
@@ -627,6 +644,15 @@ div .navigation-link {
     cursor: pointer;
 }
 
+.contacts > .about-us-paragraph {
+    width: 513px;
+}
+
+
+.devace-item:nth-child(2) .devace-link {
+    display: block;
+    width: 129px;
+}
 
 .subscription {
     display: flex;
@@ -675,7 +701,7 @@ div .navigation-link {
     font-style: normal;
     font-size: 18px;
     line-height: 30px;
-    text-decoration: none;
+    text-decoration: underline;
     color: #444444;
 }
 
@@ -772,6 +798,8 @@ div .navigation-link {
     background: transparent;
     padding: 10px 0 10px 48px;
     border-radius: 50px 0px 0px 50px;
+    border: 2px solid;
+    border-right: none;
 }
 
 

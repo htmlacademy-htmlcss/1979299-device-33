@@ -47,6 +47,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    padding: 11px 447px 14px 16px;
 }
 
 .subscription-mail::placeholder {
@@ -55,14 +56,25 @@ body {
 }
 
 
-
 .input-form {
     font-family: "rubik", sans-serif;
     font-size: 16px;
     line-height: 20px;
     background: transparent;
+    padding: 10px 56px;
+    border-radius: 0 50px 50px 0;
+    
 }
- 
+
+.navigation-icon {
+    position: relative;
+    transform: translateX(40px) translateY(15px);
+}
+
+.navigator-item .navigation-link {
+    padding-left: 12px;
+}
+
 .device {
     width: 1160px;
     margin: auto;
@@ -183,9 +195,14 @@ div .navigation-link {
 
 
 .in-the-basket {
+    display: block;
     font-size: 14px;
     line-height: 17px;
     background: #FFFFFF;
+    padding: 2px 6px;
+    border-radius: 50px;
+    position: relative;
+    left: 5px;
 } 
 
 .page-container {
@@ -563,7 +580,6 @@ div .navigation-link {
     margin-bottom: 30px;
 }
 
-
 .about-us-list {
     margin: 0;
     padding: 0;
@@ -754,7 +770,11 @@ div .navigation-link {
     font-size: 16px;
     line-height: 20px;
     background: transparent;
+    padding: 10px 0 10px 48px;
+    border-radius: 50px 0px 0px 50px;
 }
+
+
 
 .navigation-search-field::placeholder {
     color: #000000;
@@ -819,6 +839,9 @@ form .catalog-filter-group:first-child {
     background-color: inherit;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    padding: 0;
+    border: none;
+    cursor: pointer;
 
 }
 
@@ -1038,6 +1061,12 @@ div .monopod-header {
     justify-content: space-between;
     list-style-type: none;
 }
+
+.monopods-item:nth-child(1)::after,
+.monopods-item:nth-child(2)::after {
+    content: ">";
+    
+} 
 
 .pagination-container {
     display: flex;

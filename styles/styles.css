@@ -95,7 +95,7 @@ body {
     width: 1160px;
     margin: auto;
     margin-top: 70px;
-    margin-bottom: 134px;
+    margin-bottom: 204px;
 }
 
 
@@ -318,9 +318,10 @@ div .navigation-link {
 
 
 .services-delivery-item {
+    display: flex;
     width: 280px;
     
-    margin-top: -30px;
+    margin-top: -40px;
 }
 
 .services-delivery-item a {
@@ -342,13 +343,22 @@ div .navigation-link {
 
 
 .services-item {
+    display: flex;
+    
     margin-top: 35px;
     width: 160px;
+    justify-content: center;
     
 }
 
+.order-icon-post {
+    margin-right: 42px;
+}
+
+
+
 .services-list {
-    
+    position: relative;
     width: 280px;
     margin: 0;
     padding: 0;
@@ -357,7 +367,20 @@ div .navigation-link {
     
 }
 
+.services-list::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 319px;
+    background-color: #000000;
+    bottom: 74px;
+    right: 18px;
+
+}
+
 .services-link {
+    
+   position: relative;
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -366,9 +389,23 @@ div .navigation-link {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    background-color: #FFE17F;
+    
+    
     padding: 10px 7.64px;
 
+}
+
+.services-link::before {
+    position: absolute;
+    content: "";
+    width: 160px;
+    height: 8px;
+    left: 50%;
+    bottom: 18px;
+    background-color: #FFE17F;
+    margin-left: -80px;
+    
+    
 
 }
 
@@ -567,6 +604,7 @@ div .navigation-link {
 }
 
 .about-us-title {
+    position: relative;
     margin: 0;
     padding: 0;
     margin-top: 47px;
@@ -644,6 +682,11 @@ div .navigation-link {
     cursor: pointer;
 }
 
+.contacts .about-us-link {
+    margin-top: 0;
+}
+
+
 .contacts > .about-us-paragraph {
     width: 513px;
 }
@@ -686,6 +729,16 @@ div .navigation-link {
     margin: 0;
     padding: 0;
   
+}
+
+.about-us .about-us-title::before,
+.contacts .about-us-title::before {
+    position: absolute;
+    width: 86px;
+    height: 7px;
+    bottom: 80px;
+    background-color: #000000;
+    content: "";
 }
 
 .about-us-canteiner .about-us-paragraph {

@@ -54,7 +54,9 @@ body {
 }
 
 .subscription-form .button {
+    margin: 0;
     border: 3px solid #CECECE;
+    padding: 18px 39px;
 }
 
 .its-free {
@@ -111,16 +113,26 @@ body {
 
 
 
-.header-logo {
+
+div .navigation-link:hover {
+    opacity: 0.6;
+}
+div .navigation-link:active {
+    opacity: 0.3;
+}
+
+div .navigation-link:focus {
     
-    margin-left: 60px;
+    outline: 2px solid #AF4FFF;
 }
 
 div .navigation-link {
     display: flex;
     align-self: flex-start;
+    width: 146px;
     margin-top: -27px;
     margin-bottom: 15px;
+    margin-left: 60px;
 }
 
 .navigation {
@@ -246,8 +258,17 @@ div .navigation-link {
     margin-top: 25px;
 }
 
+.slider-button:hover {
+    opacity: 0.6;
+}
 
+.slider-button:active {
+    opacity: 0.3;
+}
 
+.slider-button:focus {
+    border: 2px solid #AF4FFF;
+}
 
 .slider-image {
     margin-top: -150px;
@@ -306,6 +327,7 @@ div .navigation-link {
     margin: 0 auto;
     margin-bottom: 70px;
     background-color: #F0F0F0;
+    
 }
 
 .services div {
@@ -389,8 +411,6 @@ div .navigation-link {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    
-    
     padding: 10px 7.64px;
 
 }
@@ -404,8 +424,7 @@ div .navigation-link {
     bottom: 18px;
     background-color: #FFE17F;
     margin-left: -80px;
-    
-    
+
 
 }
 
@@ -636,13 +655,26 @@ div .navigation-link {
 }
 
 .about-us-list {
+    
     margin: 0;
     padding: 0;
-    color: #FFC700;
+    list-style: none;
     
 }
 
+.about-us-item::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: #FFC700;
+    left: 0;
+    bottom: 10px;
+}
+
 .about-us-item {
+    position: relative;
     margin-bottom: 19px;
     padding-left: 26px;
 }
@@ -665,6 +697,7 @@ div .navigation-link {
 }
 
 .about-us-link {
+    position: relative;
     display: inline-block;
     margin-top: 30px;
     font-family: "raleway", sans-serif;
@@ -675,15 +708,68 @@ div .navigation-link {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    background-color: #FFE17F;
     letter-spacing: 0.2em;
     padding: 10px 12px;
     border: none;
     cursor: pointer;
 }
 
+.about-us .about-us-link {
+    width: 270px;
+}
+
+
+.about-us .about-us-link::before {
+    position: absolute;
+    content: "";
+    width: 270px;
+    height: 8px;
+    left: 50%;
+    margin-left: -135px;
+    bottom: 17px;
+    background-color: #FFE17F;
+    z-index: -1;
+}
+
+.about-us .about-us-link:hover {
+    background-color: #FFE17F;
+} 
+
+.about-us .about-us-link:active {
+    background-color: #FFCC33;
+}
+
+.about-us .about-us-link:focus {
+   border: 2px solid #AF4FFF; 
+}
+
+.contacts .about-us-link::before {
+    position: absolute;
+    content: "";
+    width: 259px;
+    height: 8px;
+    left: 50%;
+    margin-left: -135px;
+    bottom: 17px;
+    background-color: #FFE17F;
+    z-index: -1;
+}
+
 .contacts .about-us-link {
     margin-top: 0;
+    width: 260px;
+}
+
+.contacts .about-us-link:hover {
+    background-color: #FFE17F;
+} 
+
+.contacts .about-us-link:active {
+    background-color: #FFCC33;
+}
+
+.contacts .about-us-link:focus {
+   border: 2px solid #AF4FFF; 
 }
 
 
@@ -760,6 +846,7 @@ div .navigation-link {
 
 
 .gallery-more {
+    position: relative;
     width: 220px;
     height: 40px;
     padding: 10px 5px;
@@ -768,13 +855,38 @@ div .navigation-link {
     font-size: 18px;
     line-height: 21px;
     color: inherit;
-    background-color: #FFE17F;
+    background: transparent;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     border: none;
     cursor: pointer;
 }
+
+.gallery-more::before {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 8px;
+    left: 50%;
+    margin-left: -110px;
+    bottom: 16px;
+    background-color: #FFE17F;
+    z-index: -1;
+}
+
+.gallery-more:hover {
+    background-color: #FFE17F;
+} 
+
+.gallery-more:active {
+    background-color: #FFCC33;
+}
+
+.gallery-more:focus {
+   border: 2px solid #AF4FFF; 
+}
+
 
 .select-container {
    display: flex;
@@ -957,6 +1069,21 @@ form .catalog-filter-group:first-child {
     margin-top: 62px;
     margin-bottom: 35px;
 }
+
+
+.footer-logo-container:hover {
+    opacity: 0.6;
+}
+
+.footer-logo-container:active {
+    opacity: 0.3;
+}
+
+.footer-logo-container:focus {
+    
+    outline: 2px solid #AF4FFF;
+}
+
 
 .footer-address-container {
     display: flex;

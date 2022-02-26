@@ -48,6 +48,24 @@ body {
     font-size: 18px;
     line-height: 30px;
     padding: 11px 447px 14px 16px;
+    background: transparent;
+    border: none;
+    border-bottom: solid 3px #C4C4C4;
+}
+
+.subscription-form .button {
+    margin: 0;
+    border: 3px solid #CECECE;
+    padding: 18px 39px;
+}
+
+.its-free {
+    display: flex;
+    align-items: center;
+}
+
+.its-free .about-us-paragraph {
+    width: auto;
 }
 
 .subscription-mail::placeholder {
@@ -63,7 +81,7 @@ body {
     background: transparent;
     padding: 10px 56px;
     border-radius: 0 50px 50px 0;
-    
+    border: 2px solid;
 }
 
 .navigation-icon {
@@ -79,7 +97,7 @@ body {
     width: 1160px;
     margin: auto;
     margin-top: 70px;
-    margin-bottom: 134px;
+    margin-bottom: 204px;
 }
 
 
@@ -95,16 +113,26 @@ body {
 
 
 
-.header-logo {
+
+div .navigation-link:hover {
+    opacity: 0.6;
+}
+div .navigation-link:active {
+    opacity: 0.3;
+}
+
+div .navigation-link:focus {
     
-    margin-left: 60px;
+    outline: 2px solid #AF4FFF;
 }
 
 div .navigation-link {
     display: flex;
     align-self: flex-start;
+    width: 146px;
     margin-top: -27px;
     margin-bottom: 15px;
+    margin-left: 60px;
 }
 
 .navigation {
@@ -179,6 +207,7 @@ div .navigation-link {
 } 
 
 .catalog-user {
+    justify-content: space-between;
     width: 293px;
     margin-right: 276px;
     margin-left: 60px;
@@ -217,19 +246,28 @@ div .navigation-link {
    
 }
 
-.slider-prev {
-    margin: 60px 0 289px 30px;
-    align-self: center;
-    
+.slider-container {
+    display: flex;
 }
 
 .slider-button {
     padding: 0;
+    background: transparent;
+    border: none;
+    align-self: flex-start;
+    margin-top: 25px;
 }
 
-.slider-next {
-    margin: 60px 0 289px 0;
-    align-self: center;
+.slider-button:hover {
+    opacity: 0.6;
+}
+
+.slider-button:active {
+    opacity: 0.3;
+}
+
+.slider-button:focus {
+    border: 2px solid #AF4FFF;
 }
 
 .slider-image {
@@ -289,6 +327,7 @@ div .navigation-link {
     margin: 0 auto;
     margin-bottom: 70px;
     background-color: #F0F0F0;
+    
 }
 
 .services div {
@@ -301,9 +340,10 @@ div .navigation-link {
 
 
 .services-delivery-item {
+    display: flex;
     width: 280px;
     
-    margin-top: -30px;
+    margin-top: -40px;
 }
 
 .services-delivery-item a {
@@ -325,13 +365,22 @@ div .navigation-link {
 
 
 .services-item {
+    display: flex;
+    
     margin-top: 35px;
     width: 160px;
+    justify-content: center;
     
 }
 
+.order-icon-post {
+    margin-right: 42px;
+}
+
+
+
 .services-list {
-    
+    position: relative;
     width: 280px;
     margin: 0;
     padding: 0;
@@ -340,7 +389,20 @@ div .navigation-link {
     
 }
 
+.services-list::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 319px;
+    background-color: #000000;
+    bottom: 74px;
+    right: 18px;
+
+}
+
 .services-link {
+    
+   position: relative;
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -349,8 +411,19 @@ div .navigation-link {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    background-color: #FFE17F;
     padding: 10px 7.64px;
+
+}
+
+.services-link::before {
+    position: absolute;
+    content: "";
+    width: 160px;
+    height: 8px;
+    left: 50%;
+    bottom: 18px;
+    background-color: #FFE17F;
+    margin-left: -80px;
 
 
 }
@@ -550,6 +623,7 @@ div .navigation-link {
 }
 
 .about-us-title {
+    position: relative;
     margin: 0;
     padding: 0;
     margin-top: 47px;
@@ -581,13 +655,26 @@ div .navigation-link {
 }
 
 .about-us-list {
+    
     margin: 0;
     padding: 0;
-    color: #FFC700;
+    list-style: none;
     
 }
 
+.about-us-item::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: #FFC700;
+    left: 0;
+    bottom: 10px;
+}
+
 .about-us-item {
+    position: relative;
     margin-bottom: 19px;
     padding-left: 26px;
 }
@@ -610,6 +697,7 @@ div .navigation-link {
 }
 
 .about-us-link {
+    position: relative;
     display: inline-block;
     margin-top: 30px;
     font-family: "raleway", sans-serif;
@@ -620,13 +708,80 @@ div .navigation-link {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    background-color: #FFE17F;
     letter-spacing: 0.2em;
     padding: 10px 12px;
     border: none;
     cursor: pointer;
 }
 
+.about-us .about-us-link {
+    width: 270px;
+}
+
+
+.about-us .about-us-link::before {
+    position: absolute;
+    content: "";
+    width: 270px;
+    height: 8px;
+    left: 50%;
+    margin-left: -135px;
+    bottom: 17px;
+    background-color: #FFE17F;
+    z-index: -1;
+}
+
+.about-us .about-us-link:hover {
+    background-color: #FFE17F;
+} 
+
+.about-us .about-us-link:active {
+    background-color: #FFCC33;
+}
+
+.about-us .about-us-link:focus {
+   border: 2px solid #AF4FFF; 
+}
+
+.contacts .about-us-link::before {
+    position: absolute;
+    content: "";
+    width: 259px;
+    height: 8px;
+    left: 50%;
+    margin-left: -135px;
+    bottom: 17px;
+    background-color: #FFE17F;
+    z-index: -1;
+}
+
+.contacts .about-us-link {
+    margin-top: 0;
+    width: 260px;
+}
+
+.contacts .about-us-link:hover {
+    background-color: #FFE17F;
+} 
+
+.contacts .about-us-link:active {
+    background-color: #FFCC33;
+}
+
+.contacts .about-us-link:focus {
+   border: 2px solid #AF4FFF; 
+}
+
+
+.contacts > .about-us-paragraph {
+    width: 513px;
+}
+
+
+.devace-item:nth-child(2) .devace-link {
+    display: block;
+    width: 129px;
+}
 
 .subscription {
     display: flex;
@@ -662,6 +817,16 @@ div .navigation-link {
   
 }
 
+.about-us .about-us-title::before,
+.contacts .about-us-title::before {
+    position: absolute;
+    width: 86px;
+    height: 7px;
+    bottom: 80px;
+    background-color: #000000;
+    content: "";
+}
+
 .about-us-canteiner .about-us-paragraph {
     width: 560px;
     margin-left: 16.5px;
@@ -675,12 +840,13 @@ div .navigation-link {
     font-style: normal;
     font-size: 18px;
     line-height: 30px;
-    text-decoration: none;
+    text-decoration: underline;
     color: #444444;
 }
 
 
 .gallery-more {
+    position: relative;
     width: 220px;
     height: 40px;
     padding: 10px 5px;
@@ -689,13 +855,38 @@ div .navigation-link {
     font-size: 18px;
     line-height: 21px;
     color: inherit;
-    background-color: #FFE17F;
+    background: transparent;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     border: none;
     cursor: pointer;
 }
+
+.gallery-more::before {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 8px;
+    left: 50%;
+    margin-left: -110px;
+    bottom: 16px;
+    background-color: #FFE17F;
+    z-index: -1;
+}
+
+.gallery-more:hover {
+    background-color: #FFE17F;
+} 
+
+.gallery-more:active {
+    background-color: #FFCC33;
+}
+
+.gallery-more:focus {
+   border: 2px solid #AF4FFF; 
+}
+
 
 .select-container {
    display: flex;
@@ -772,6 +963,8 @@ div .navigation-link {
     background: transparent;
     padding: 10px 0 10px 48px;
     border-radius: 50px 0px 0px 50px;
+    border: 2px solid;
+    border-right: none;
 }
 
 
@@ -876,6 +1069,21 @@ form .catalog-filter-group:first-child {
     margin-top: 62px;
     margin-bottom: 35px;
 }
+
+
+.footer-logo-container:hover {
+    opacity: 0.6;
+}
+
+.footer-logo-container:active {
+    opacity: 0.3;
+}
+
+.footer-logo-container:focus {
+    
+    outline: 2px solid #AF4FFF;
+}
+
 
 .footer-address-container {
     display: flex;

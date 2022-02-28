@@ -56,7 +56,7 @@ body {
 .subscription-form .button {
     margin: 0;
     border: 3px solid #CECECE;
-    padding: 18px 39px;
+    padding: 15px 39px;
 }
 
 .its-free {
@@ -248,14 +248,26 @@ div .navigation-link {
 
 .slider-container {
     display: flex;
+    position: relative;
+    
 }
 
 .slider-button {
+    position: absolute;
     padding: 0;
     background: transparent;
     border: none;
     align-self: flex-start;
-    margin-top: 25px;
+    margin-top: 28px;
+    
+}
+
+.slider-button:first-of-type {
+    right: 255px;
+}
+
+.slider-button:last-of-type {
+    left: 55px;
 }
 
 .slider-button:hover {
@@ -272,6 +284,7 @@ div .navigation-link {
 
 .slider-image {
     margin-top: -150px;
+    
 }
 
 
@@ -833,7 +846,7 @@ div .navigation-link {
     content: "";
 }
 
-.about-us-canteiner .about-us-paragraph {
+.about-us-canteiner > .about-us-paragraph {
     width: 560px;
     margin-left: 16.5px;
 }
@@ -1308,17 +1321,24 @@ div .about-us-link:focus {
     padding: 0;
     margin-left: 50px;
     width: 541px;
-    justify-content: space-between;
+    justify-content: flex-start;
     list-style-type: none;
 }
 
-.monopods-item:nth-child(1),
-.monopods-item:nth-child(2) {
+.monopods-item {
+    position: relative;
+    padding-right: 36px;
+}
+
+.monopods-item:nth-child(1)::after,
+.monopods-item:nth-child(2)::after {
     position: absolute;
     content: "";
     background-image: url(../images/catalog-images/breadcrumbs.svg);
     width: 4px;
     height: 7px;
+    right: 18px;
+    bottom: 8px;
     
     
 } 

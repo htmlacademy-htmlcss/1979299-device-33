@@ -249,6 +249,7 @@ div .navigation-link {
 .slider-container {
     display: flex;
     position: relative;
+    margin-right: 40px;
     
 }
 
@@ -258,16 +259,16 @@ div .navigation-link {
     background: transparent;
     border: none;
     align-self: flex-start;
-    margin-top: 28px;
+    margin-top: 55px;
     
 }
 
 .slider-button:first-of-type {
-    right: 255px;
+    left: 30px;
 }
 
 .slider-button:last-of-type {
-    left: 55px;
+    right: 5px;
 }
 
 .slider-button:hover {
@@ -860,6 +861,7 @@ div .navigation-link {
     font-size: 18px;
     line-height: 30px;
     text-decoration: underline;
+    text-decoration-skip-ink: none;
     color: #444444;
 }
 

@@ -412,6 +412,7 @@ div .navigation-link {
     text-decoration: none;
     color: inherit;
     padding: 10px 7.64px;
+    z-index: 1;
 
 }
 
@@ -424,6 +425,7 @@ div .navigation-link {
     bottom: 18px;
     background-color: #FFE17F;
     margin-left: -80px;
+    z-index: -1;
 
 
 }
@@ -800,6 +802,10 @@ div .navigation-link {
     justify-content: space-between;
 }
 
+.button-sorting {
+    background: transparent;
+    border: none;
+}
 
 .about-us-canteiner {
     display: flex;
@@ -1183,11 +1189,44 @@ div .monopod-header {
     letter-spacing: 0.2em;
 }
 
+
+div .about-us-link {
+    z-index: 1;
+    width: 220px;
+}
+
+div .about-us-link::before {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 8px;
+    background-color: #FFE17F;
+    left: 50%;
+    margin-left: -110px;
+    bottom: 18px;
+    z-index: -1;
+}
+
+div .about-us-link:hover {
+    background-color: #FFE17F;
+} 
+
+div .about-us-link:active {
+    background-color: #FFCC33;
+}
+
+div .about-us-link:focus {
+   border: 2px solid #AF4FFF; 
+}
+
+
 .select-control {
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    background: transparent;
+    border: none;
 }
 
 .filter {
@@ -1260,7 +1299,10 @@ div .monopod-header {
     text-align: right;
 }
 
+
+
 .monopods-list {
+    
     display: flex;
     margin: 0;
     padding: 0;
@@ -1270,9 +1312,14 @@ div .monopod-header {
     list-style-type: none;
 }
 
-.monopods-item:nth-child(1)::after,
-.monopods-item:nth-child(2)::after {
-    content: ">";
+.monopods-item:nth-child(1),
+.monopods-item:nth-child(2) {
+    position: absolute;
+    content: "";
+    background-image: url(../images/catalog-images/breadcrumbs.svg);
+    width: 4px;
+    height: 7px;
+    
     
 } 
 

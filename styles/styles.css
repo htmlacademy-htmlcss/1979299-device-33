@@ -490,14 +490,7 @@ div .navigation-link {
 }
 
 
-.services-item {
-    display: flex;
-    
-    margin-top: 35px;
-    width: 160px;
-    justify-content: center;
-    
-}
+
 
 .order-icon-post {
     margin-right: 42px;
@@ -506,7 +499,9 @@ div .navigation-link {
 
 
 .services-list {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     width: 280px;
     margin: 0;
@@ -527,6 +522,13 @@ div .navigation-link {
 
 }
 
+.services-item {
+   
+    
+
+    
+    
+}
 .services-link {
     
    position: relative;
@@ -538,9 +540,11 @@ div .navigation-link {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    padding: 10px 7.64px;
     z-index: 1;
     width: 280px;
+    margin-right: 120px;
+
+    
     
 
 }
@@ -553,7 +557,7 @@ div .navigation-link {
     left: 50%;
     bottom: 18px;
     background-color: #FFE17F;
-    margin-left: -80px;
+    margin-left: -120px;
     z-index: -1;
 
 

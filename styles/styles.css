@@ -366,6 +366,7 @@ div .navigation-link {
     align-self: flex-start;
     margin-top: 55px;
     cursor: pointer;
+    height: 64px;
     
 }
 
@@ -466,7 +467,7 @@ div .navigation-link {
     margin-top: -40px;
 }
 
-.services-delivery-item a {
+.services-delivery-item .services-delivery:hover {
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -478,6 +479,11 @@ div .navigation-link {
     background-color: #000000;  
 
 }
+
+.services-delivery-item .services-delivery:active {
+
+}
+
 
 .services-delivery {
     padding: 9px 120px 11px 10px;
@@ -500,6 +506,7 @@ div .navigation-link {
 
 
 .services-list {
+    
     position: relative;
     width: 280px;
     margin: 0;
@@ -533,6 +540,8 @@ div .navigation-link {
     color: inherit;
     padding: 10px 7.64px;
     z-index: 1;
+    width: 280px;
+    
 
 }
 

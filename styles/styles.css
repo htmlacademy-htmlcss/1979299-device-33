@@ -467,7 +467,7 @@ div .navigation-link {
     margin-top: -40px;
 }
 
-.services-delivery-item .services-delivery:hover {
+.services-delivery-item a {
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -480,9 +480,6 @@ div .navigation-link {
 
 }
 
-.services-delivery-item .services-delivery:active {
-
-}
 
 
 .services-delivery {
@@ -499,9 +496,6 @@ div .navigation-link {
 
 
 .services-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: relative;
     width: 280px;
     margin: 0;
@@ -523,12 +517,12 @@ div .navigation-link {
 }
 
 .services-item {
-   
-    
-
-    
-    
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    width: 160px;
 }
+
 .services-link {
     
    position: relative;
@@ -541,8 +535,7 @@ div .navigation-link {
     text-decoration: none;
     color: inherit;
     z-index: 1;
-    width: 280px;
-    margin-right: 120px;
+    padding: 10px 7.64px;
 
     
     
@@ -557,7 +550,7 @@ div .navigation-link {
     left: 50%;
     bottom: 18px;
     background-color: #FFE17F;
-    margin-left: -120px;
+    margin-left: -80px;
     z-index: -1;
 
 
@@ -1028,6 +1021,9 @@ div .navigation-link {
    border: 2px solid #AF4FFF; 
 }
 
+.gallery-more:disabled {
+    opacity: 0.3;
+}
 
 .select-container {
    display: flex;
@@ -1212,15 +1208,15 @@ form .catalog-filter-group:first-child {
 }
 
 
-.footer-logo-container:hover {
+.footer-logo-container a:hover {
     opacity: 0.6;
 }
 
-.footer-logo-container:active {
+.footer-logo-container a:active {
     opacity: 0.3;
 }
 
-.footer-logo-container:focus {
+.footer-logo-container a:focus {
     
     outline: 2px solid #AF4FFF;
 }

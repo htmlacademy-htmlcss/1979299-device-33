@@ -57,6 +57,7 @@ body {
     margin: 0;
     border: 3px solid #CECECE;
     padding: 15px 39px;
+    cursor: pointer;
 }
 
 .its-free {
@@ -82,6 +83,31 @@ body {
     padding: 10px 56px;
     border-radius: 0 50px 50px 0;
     border: 2px solid;
+    
+}
+
+
+
+.input-form:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #000000;
+}
+
+.input-form:active {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #000000;
+    opacity: 0.3;
+}
+
+.input-form:focus {
+    outline: 2px solid #AF4FFF;
+    border-radius: 0;
+}
+
+.input-form:visited {
+    opacity: 0.3;
 }
 
 .navigation-icon {
@@ -91,6 +117,26 @@ body {
 
 .navigator-item .navigation-link {
     padding-left: 12px;
+}
+
+.navigator-item .navigation-link:nth-child(2):hover,
+.navigator-item .navigation-link:nth-child(3):hover,
+.navigator-item .navigation-link:nth-child(4):hover {
+    opacity: 0.6;
+} 
+
+
+
+.navigator-item .navigation-link:nth-child(2):active,
+.navigator-item .navigation-link:nth-child(3):active,
+.navigator-item .navigation-link:nth-child(4):active {
+    opacity: 0.3;
+}
+
+.navigator-item .navigation-link:nth-child(2):focus,
+.navigator-item .navigation-link:nth-child(3):focus,
+.navigator-item .navigation-link:nth-child(4):focus {
+    outline: 2px solid #AF4FFF;
 }
 
 .device {
@@ -133,6 +179,7 @@ div .navigation-link {
     margin-top: -27px;
     margin-bottom: 15px;
     margin-left: 60px;
+    padding: 2px 1.5px;
 }
 
 .navigation {
@@ -155,6 +202,13 @@ div .navigation-link {
     align-items: center;
     margin:0;
     padding: 0;
+}
+
+.navigator-item-user button {
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .search form {
@@ -184,7 +238,7 @@ div .navigation-link {
 }
 
 .basket {
-    width: 74px;
+    width: 98px;
     margin-left: 36px;
     margin-right: 60px;
 }
@@ -207,11 +261,62 @@ div .navigation-link {
 } 
 
 .catalog-user {
+    
+    position: relative;
     justify-content: space-between;
     width: 293px;
     margin-right: 276px;
     margin-left: 60px;
 }
+
+.catalog-user-list {
+    display: none;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    grid-row: repeat(3, 100%);
+    column-gap:  30px;
+    width: 660px;
+    top: 60px;
+    left: -40px;
+    list-style-type: none;
+}
+
+.catalog-user-link {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.catalog-user:focus-within .catalog-user-list {
+    display: block;
+    
+}
+
+.catalog-user img:active {
+    background-image: "../images/header-images/open-catalog.svg";
+    width: 50px;
+    height: 50px;
+}
+
+.catalog-user img:focus {
+    border: 2px solid #AF4FFF;
+}
+
+
+
+
+
+
+
+
+
+
 
 .service-user {
     width: 127px;
@@ -260,6 +365,8 @@ div .navigation-link {
     border: none;
     align-self: flex-start;
     margin-top: 55px;
+    cursor: pointer;
+    height: 64px;
     
 }
 
@@ -360,7 +467,7 @@ div .navigation-link {
     margin-top: -40px;
 }
 
-.services-delivery-item a {
+.services-delivery-item .services-delivery:hover {
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -373,19 +480,17 @@ div .navigation-link {
 
 }
 
+.services-delivery-item .services-delivery:active {
+
+}
+
+
 .services-delivery {
     padding: 9px 120px 11px 10px;
 }
 
 
-.services-item {
-    display: flex;
-    
-    margin-top: 35px;
-    width: 160px;
-    justify-content: center;
-    
-}
+
 
 .order-icon-post {
     margin-right: 42px;
@@ -394,6 +499,9 @@ div .navigation-link {
 
 
 .services-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     width: 280px;
     margin: 0;
@@ -414,6 +522,13 @@ div .navigation-link {
 
 }
 
+.services-item {
+   
+    
+
+    
+    
+}
 .services-link {
     
    position: relative;
@@ -425,8 +540,12 @@ div .navigation-link {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    padding: 10px 7.64px;
     z-index: 1;
+    width: 280px;
+    margin-right: 120px;
+
+    
+    
 
 }
 
@@ -438,7 +557,7 @@ div .navigation-link {
     left: 50%;
     bottom: 18px;
     background-color: #FFE17F;
-    margin-left: -80px;
+    margin-left: -120px;
     z-index: -1;
 
 
@@ -819,6 +938,7 @@ div .navigation-link {
 .button-sorting {
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .about-us-canteiner {
@@ -1071,7 +1191,7 @@ form .catalog-filter-group:first-child {
 }
 
 .subscription-img {
-    margin-left: 188px;
+    margin-right: 16.5px;
 }
 
 .page-footer {
@@ -1303,6 +1423,7 @@ div .about-us-link:focus {
     text-align: center;
     color: inherit;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .product-card-image {

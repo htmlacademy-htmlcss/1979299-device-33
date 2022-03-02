@@ -101,9 +101,12 @@ body {
     opacity: 0.3;
 }
 
-.label-input-form:focus {
+.label-input-form:focus-within {
     outline: 2px solid #AF4FFF;
-   
+    width: 164px;
+    height: 44px;
+    outline-offset: 2px;
+    flex-grow: 0;
 }
 
 .input-form:visited {
@@ -224,7 +227,7 @@ div .navigation-link {
 
 }
 
-.search label {
+.search label:first-child {
     flex-grow: 1;
 }
 
@@ -273,9 +276,7 @@ div .navigation-link {
 .catalog-user-list {
     display: none;
     position: absolute;
-    display: grid;
     grid-template-columns: repeat(3, 220px);
-    grid-row: repeat(3, 100%);
     column-gap:  30px;
     width: 660px;
     top: 60px;
@@ -309,16 +310,6 @@ div .navigation-link {
     border: 2px solid #AF4FFF;
 }
 
-
-
-
-
-
-
-
-
-
-
 .service-user {
     width: 127px;
     margin-right: 45px;
@@ -326,6 +317,10 @@ div .navigation-link {
 
 .navigator-item-user:nth-child(4) {
     margin-right: 60px;
+}
+
+.catalog-user-item:last-child {
+    grid-column: 1;
 }
 
 
@@ -1056,15 +1051,15 @@ div .navigation-link {
     z-index: -1;
 }
 
-.gallery-more:disabled:hover {
+.gallery-more:hover {
     background-color: #FFE17F;
 } 
 
-.gallery-more:disabled:active {
+.gallery-more:active {
     background-color: #FFCC33;
 }
 
-.gallery-more:disabled:focus {
+.gallery-more:focus {
    border: 2px solid #AF4FFF; 
 }
 
@@ -1227,6 +1222,7 @@ form .catalog-filter-group:first-child {
 
 .button {
     width: 253px;
+    
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -1237,8 +1233,8 @@ form .catalog-filter-group:first-child {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     padding: 0;
-    border: none;
     cursor: pointer;
+    border: none;
 
 }
 
@@ -1274,6 +1270,15 @@ form .catalog-filter-group:first-child {
     margin-bottom: 35px;
 }
 
+footer-logo-container a {
+    display: flex;
+    width: 149px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 .footer-logo-container a:hover {
     opacity: 0.6;
@@ -1292,6 +1297,7 @@ form .catalog-filter-group:first-child {
 .footer-address-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 63px;
 }
 
@@ -1383,6 +1389,19 @@ form .catalog-filter-group:first-child {
     height: 40px;
     margin: 15px;
 }
+
+.social-link::before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: url(images/footer-images/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 
 .footer-social-item:hover {
     background-color: #FFC700;

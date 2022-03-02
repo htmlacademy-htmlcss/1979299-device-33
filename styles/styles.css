@@ -1390,32 +1390,43 @@ footer-logo-container a {
     margin: 15px;
 }
 
-.social-link::before {
+
+.social-link {
     display: block;
+    position: relative;
     width: 40px;
     height: 40px;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.3);
-    background-image: url(images/footer-images/facebook.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.social-link:first-child::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/footer-images/facebook.svg");
+    width: 9px;
+    height: 18px;
+    left: 15px;
+    bottom: 10px;
 }
 
 
 
-.footer-social-item:hover {
+
+.social-link:hover {
     background-color: #FFC700;
     border-radius: 50px;
 }
 
-.footer-social-item:active {
+.social-link:active {
     background-color: #FFC700;
     border-radius: 50px;
     opacity: 0.3;
 }
 
-.footer-social-item:focus {
-
+social-link:focus {
+    outline: 2px solid #AF4FFF;
+    border-radius: 0;
 }
 
 .htmlacademy-link {

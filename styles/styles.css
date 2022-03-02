@@ -101,9 +101,9 @@ body {
     opacity: 0.3;
 }
 
-.input-form:focus {
+.label-input-form:focus {
     outline: 2px solid #AF4FFF;
-    border-radius: 0;
+   
 }
 
 .input-form:visited {
@@ -112,7 +112,8 @@ body {
 
 .navigation-icon {
     position: relative;
-    transform: translateX(40px) translateY(15px);
+    bottom: 30px;
+    left: 15px;
 }
 
 .navigator-item .navigation-link {

@@ -1519,20 +1519,23 @@ social-link:focus {
 }
 
 .htmlacademy-link {
-    margin-bottom: 65px;
+    
+    fill: #FFC700;
 }
 
 .htmlacademy-link:hover {
-    background-image: "../images/footer-images/logo-htmlacademy-hover.svg";
-    width: 155px;
-    height: 33px;
+    fill: #FFFFFF;
 }
 
 .htmlacademy-link:active {
-    color: #FFFFFF;
+    fill: #FFFFFF;
     opacity: 0.3;
-    outline: 2px solid #AF4FFF;
 }
+
+.htmlacademy-link:focus {
+    outline: 1px solid #AF4FFF;
+}
+
 
 div .monopod-header {
     margin: 0;

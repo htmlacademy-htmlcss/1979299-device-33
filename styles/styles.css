@@ -160,20 +160,25 @@ body {
 
 .navigator-item .navigation-link {
     position: relative;
-    padding-left: 12px;
+    
+    
 }
 
-.navigator-item .navigation-link:nth-child(2)::before {
+.navigator-item .navigation-link:nth-child(1)::before {
     position: absolute;
     content: "";
     width: 13px;
     height: 12px;
-    background-image: "../images/header-images/inter.svg";
+    background-image: url("../images/header-images/inter.svg");
+    left: -25px;
+    bottom: 15px;
 }
 
+    
+
+.navigator-item .navigation-link:nth-child(1):hover,
 .navigator-item .navigation-link:nth-child(2):hover,
-.navigator-item .navigation-link:nth-child(3):hover,
-.navigator-item .navigation-link:nth-child(4):hover {
+.navigator-item .navigation-link:nth-child(2):hover {
     opacity: 0.6;
 } 
 
@@ -241,12 +246,15 @@ div .navigation-link {
 }
 
 .navigation-list {
+
     display: flex;
     flex-wrap: nowrap;
     width: 1160px;
     margin: 0 auto;
     padding: 0;
     list-style-type: none;
+    align-items: baseline;
+
 }
 
 .navigator-item {
@@ -281,7 +289,8 @@ div .navigation-link {
 
 .come-in {
     width: 231px;
-    margin-left: 26px;
+    margin-left: 53px;
+    
 }
 
 .compare {

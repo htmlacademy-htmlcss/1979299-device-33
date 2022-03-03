@@ -871,8 +871,12 @@ div .navigation-link {
 }
 
 .order:hover {
-    opacity: 1;
+    
 
+}
+
+.order::before:hover {
+    background-color: #FFC700;
 }
 
 .order:active {
@@ -880,7 +884,7 @@ div .navigation-link {
 }
 
 .order:focus {
-    border: 2px solid #AF4FFF;
+    outline: 2px solid #AF4FFF;
     
 }
 

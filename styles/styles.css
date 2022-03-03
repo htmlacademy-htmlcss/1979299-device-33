@@ -461,7 +461,7 @@ div .navigation-link {
 }
 
 .slider-button:focus {
-    border: 2px solid #AF4FFF;
+    outline: 2px solid #AF4FFF;
 }
 
 .slider-image {

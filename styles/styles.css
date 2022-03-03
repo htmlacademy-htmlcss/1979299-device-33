@@ -378,13 +378,13 @@ div .navigation-link {
     
 }
 
-.catalog-user img:active {
+.catalog-user svg:active {
     background-image: "../images/header-images/open-catalog.svg";
     width: 50px;
     height: 50px;
 }
 
-.catalog-user img:focus {
+.catalog-user svg:focus {
     border: 2px solid #AF4FFF;
 }
 
@@ -487,7 +487,45 @@ div .navigation-link {
     justify-content: flex-start;
 }
 
-   
+
+.devace-item:nth-child(2) .devace-link {
+    display: block;
+    width: 129px;
+}   
+
+.devace-item:active {
+    opacity: 0.3;
+}
+
+.devace-images {
+    background-color: #FFE17F;
+
+}
+
+.devace-images:hover {
+    background: #FFC700;
+}
+
+
+
+.devace-item:focus {
+    outline: 2px solid #AF4FFF; 
+}
+
+.devace-link {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+
+
+
 .contacts-subtitle {
     margin: 0;
     margin-bottom: 15px;
@@ -1042,10 +1080,7 @@ div .navigation-link {
 }
 
 
-.devace-item:nth-child(2) .devace-link {
-    display: block;
-    width: 129px;
-}
+
 
 .subscription {
     display: flex;
@@ -1203,33 +1238,6 @@ div .navigation-link {
 
 
 
-.devace-images {
-    background-color: #FFE17F;
-
-}
-
-.devace-images:hover {
-    background: #FFC700;
-}
-
-.devace-item:active {
-    opacity: 0.3;
-}
-
-.devace-images a:focus {
-    border: 2px solid #AF4FFF; 
-}
-
-.devace-link {
-    font-family: "raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 24px;
-    color: inherit;
-    background-color: inherit;
-    text-decoration: none;
-    letter-spacing: -0.02em;
-}
 
 
 
@@ -1464,26 +1472,35 @@ footer-logo-container a {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.social-link:first-child::before {
+.footer-social-item:first-child .social-link::before {
     position: absolute;
     content: "";
     background-image: url("../images/footer-images/facebook.svg");
     width: 9px;
     height: 18px;
-    left: 15px;
-    bottom: 10px;
+    left: 16px;
+    bottom: 11px;
 }
 
-.social-link:nth-child(2)::before {
+.footer-social-item:nth-child(2) .social-link::before {
     position: absolute;
     content: "";
     background-image: url("../images/footer-images/instagtam.svg");
     width: 16px;
     height: 16px;
-    left: 15px;
-    bottom: 10px;
+    left: 12px;
+    bottom: 12px;
 }
 
+.footer-social-item:last-child .social-link::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/footer-images/twitter.svg");
+    width: 15px;
+    height: 14px;
+    left: 13px;
+    bottom: 13px;
+}
 
 .social-link:hover {
     background-color: #FFC700;
@@ -1497,7 +1514,7 @@ footer-logo-container a {
 }
 
 social-link:focus {
-    border: 2px solid #AF4FFF;
+    outline: 2px solid #AF4FFF;
     
 }
 

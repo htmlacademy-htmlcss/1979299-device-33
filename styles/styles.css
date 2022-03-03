@@ -99,11 +99,11 @@ body {
 
 .search label:focus-within {
     outline: 2px solid #AF4FFF;
-    width: 363px;
-    height: 44px;
+   
     outline-offset: 2px;
     flex-grow: 0;
 }
+
 
 .navigation-search-field::placeholder {
     color: #000000;
@@ -164,7 +164,7 @@ body {
     
 }
 
-.navigation-link:first-child:before {
+.navigator-item:nth-child(2) .navigation-link::before {
     position: absolute;
     content: "";
     width: 13px;
@@ -174,25 +174,44 @@ body {
     bottom: 15px;
 }
 
-    
+.navigator-item:nth-child(3) .navigation-link::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 12px;
+    background-image: url("../images/header-images/compare.svg");
+    left: -25px;
+    bottom: 15px;
+}
 
-.navigator-item .navigation-link:nth-child(1):hover,
-.navigator-item .navigation-link:nth-child(2):hover,
-.navigator-item .navigation-link:nth-child(2):hover {
+.navigator-item:nth-child(4) .navigation-link::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 12px;
+    background-image: url("../images/header-images/basket.svg");
+    left: -25px;
+    bottom: 15px;
+}
+
+
+.navigator-item:nth-child(2) .navigation-link:hover,
+.navigator-item:nth-child(3) .navigation-link:hover,
+.navigator-item:nth-child(4) .navigation-link:hover {
     opacity: 0.6;
 } 
 
 
 
-.navigator-item .navigation-link:nth-child(1):active,
-.navigator-item .navigation-link:nth-child(2):active,
-.navigator-item .navigation-link:nth-child(3):active {
+.navigator-item:nth-child(2) .navigation-link:hover,
+.navigator-item:nth-child(3) .navigation-link:hover,
+.navigator-item:nth-child(4) .navigation-link:hover {
     opacity: 0.3;
 }
 
-.navigator-item .navigation-link:nth-child(1):focus,
-.navigator-item .navigation-link:nth-child(2):focus,
-.navigator-item .navigation-link:nth-child(3):focus {
+.navigator-item:nth-child(2) .navigation-link:hover,
+.navigator-item:nth-child(3) .navigation-link:hover,
+.navigator-item:nth-child(4) .navigation-link:hover {
     outline: 2px solid #AF4FFF;
 }
 
@@ -285,6 +304,8 @@ div .navigation-link {
 
 .search label:first-child {
     flex-grow: 1;
+    width: 363px;
+    height: 44px;
 }
 
 .come-in {
@@ -389,7 +410,7 @@ div .navigation-link {
     padding: 2px 6px;
     border-radius: 50px;
     position: relative;
-    left: 5px;
+    left: -15px;
 } 
 
 .page-container {

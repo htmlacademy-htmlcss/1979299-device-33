@@ -164,7 +164,7 @@ body {
     
 }
 
-.navigator-item .navigation-link:nth-child(1)::before {
+.navigation-link:first-child:before {
     position: absolute;
     content: "";
     width: 13px;
@@ -184,15 +184,15 @@ body {
 
 
 
+.navigator-item .navigation-link:nth-child(1):active,
 .navigator-item .navigation-link:nth-child(2):active,
-.navigator-item .navigation-link:nth-child(3):active,
-.navigator-item .navigation-link:nth-child(4):active {
+.navigator-item .navigation-link:nth-child(3):active {
     opacity: 0.3;
 }
 
+.navigator-item .navigation-link:nth-child(1):focus,
 .navigator-item .navigation-link:nth-child(2):focus,
-.navigator-item .navigation-link:nth-child(3):focus,
-.navigator-item .navigation-link:nth-child(4):focus {
+.navigator-item .navigation-link:nth-child(3):focus {
     outline: 2px solid #AF4FFF;
 }
 

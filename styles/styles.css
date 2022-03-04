@@ -160,6 +160,7 @@ body {
 
 .navigator-item .navigation-link {
     position: relative;
+    padding-left: 30px;
     
     
 }
@@ -170,7 +171,7 @@ body {
     width: 13px;
     height: 12px;
     background-image: url("../images/header-images/inter.svg");
-    left: -25px;
+    left: 5px;
     bottom: 15px;
 }
 
@@ -180,17 +181,17 @@ body {
     width: 10px;
     height: 12px;
     background-image: url("../images/header-images/compare.svg");
-    left: -25px;
+    left: 5px;
     bottom: 15px;
 }
 
 .navigator-item:last-child .navigation-link::before {
     position: absolute;
     content: "";
-    width: 10px;
-    height: 12px;
+    width: 16px;
+    height: 14px;
     background-image: url("../images/header-images/basket.svg");
-    left: -25px;
+    left: 1px;
     bottom: 15px;
 }
 
@@ -304,7 +305,7 @@ div .navigation-link {
 
 .come-in {
     width: 231px;
-    margin-left: 53px;
+    margin-left: 20px;
     
 }
 
@@ -404,7 +405,8 @@ div .navigation-link {
     padding: 2px 6px;
     border-radius: 50px;
     position: relative;
-    left: -15px;
+    left: 10PX;
+    z-index: 1;
 } 
 
 .page-container {
@@ -502,7 +504,7 @@ div .navigation-link {
 
 
 
-.devace-item:focus {
+.devace-item:focus-within {
     outline: 2px solid #AF4FFF; 
 }
 
@@ -699,6 +701,7 @@ div .navigation-link {
      width: 56px;
     margin-left: 0;
     margin-right: 26px;
+    
 }
 
 .navigation-link {

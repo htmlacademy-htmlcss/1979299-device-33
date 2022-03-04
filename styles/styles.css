@@ -174,7 +174,7 @@ body {
     bottom: 15px;
 }
 
-.navigator-item:nth-child(3) .navigation-link::before {
+.navigator-item:nth-child(4) .navigation-link::before {
     position: absolute;
     content: "";
     width: 10px;
@@ -184,7 +184,7 @@ body {
     bottom: 15px;
 }
 
-.navigator-item:nth-child(4) .navigation-link::before {
+.navigator-item:last-child .navigation-link::before {
     position: absolute;
     content: "";
     width: 10px;
@@ -195,23 +195,17 @@ body {
 }
 
 
-.navigator-item:nth-child(2) .navigation-link:hover,
-.navigator-item:nth-child(3) .navigation-link:hover,
-.navigator-item:nth-child(4) .navigation-link:hover {
+.navigator-item > .navigation-link:hover {
     opacity: 0.6;
 } 
 
 
 
-.navigator-item:nth-child(2) .navigation-link:hover,
-.navigator-item:nth-child(3) .navigation-link:hover,
-.navigator-item:nth-child(4) .navigation-link:hover {
+.navigator-item > .navigation-link:active {
     opacity: 0.3;
 }
 
-.navigator-item:nth-child(2) .navigation-link:hover,
-.navigator-item:nth-child(3) .navigation-link:hover,
-.navigator-item:nth-child(4) .navigation-link:hover {
+.navigator-item > .navigation-link:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -691,12 +685,8 @@ div .navigation-link {
 
 }
 
-.exit {
-    width: 56px;
-    margin-left: 0;
-}
 
-.navigation-link-exit {
+.exit {
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -706,6 +696,9 @@ div .navigation-link {
     opacity: 0.3;
     text-align: center;
     text-decoration: none;
+     width: 56px;
+    margin-left: 0;
+    margin-right: 26px;
 }
 
 .navigation-link {
@@ -1559,6 +1552,19 @@ div .monopod-header {
     text-decoration: none;
 }
 
+.monopods-link:hover {
+    opacity: 0.6;
+}
+
+.monopods-link:active {
+    opacity: 0.3;
+}
+
+.monopods-link:focus {
+    outline: 2px solid #AF4FFF;
+} 
+
+
 .filter-title {
     font-family: "raleway", sans-serif;
     font-weight: 800;
@@ -1609,6 +1615,19 @@ div .about-us-link:focus {
     background: transparent;
     border: none;
 }
+
+.select-control:hover {
+    opacity: 0.6;
+}
+
+.select-control:active {
+    opacity: 0.3;
+}
+
+.select-control:focus {
+    outline: 2px solid #AF4FFF;
+} 
+
 
 .filter {
     background: #F0F0F0;

@@ -99,11 +99,11 @@ body {
 
 .search label:focus-within {
     outline: 2px solid #AF4FFF;
-    width: 363px;
-    height: 44px;
+   
     outline-offset: 2px;
     flex-grow: 0;
 }
+
 
 .navigation-search-field::placeholder {
     color: #000000;
@@ -164,7 +164,7 @@ body {
     
 }
 
-.navigation-link:first-child:before {
+.navigator-item:nth-child(2) .navigation-link::before {
     position: absolute;
     content: "";
     width: 13px;
@@ -174,25 +174,44 @@ body {
     bottom: 15px;
 }
 
-    
+.navigator-item:nth-child(3) .navigation-link::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 12px;
+    background-image: url("../images/header-images/compare.svg");
+    left: -25px;
+    bottom: 15px;
+}
 
-.navigator-item .navigation-link:nth-child(1):hover,
-.navigator-item .navigation-link:nth-child(2):hover,
-.navigator-item .navigation-link:nth-child(2):hover {
+.navigator-item:nth-child(4) .navigation-link::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 12px;
+    background-image: url("../images/header-images/basket.svg");
+    left: -25px;
+    bottom: 15px;
+}
+
+
+.navigator-item:nth-child(2) .navigation-link:hover,
+.navigator-item:nth-child(3) .navigation-link:hover,
+.navigator-item:nth-child(4) .navigation-link:hover {
     opacity: 0.6;
 } 
 
 
 
-.navigator-item .navigation-link:nth-child(1):active,
-.navigator-item .navigation-link:nth-child(2):active,
-.navigator-item .navigation-link:nth-child(3):active {
+.navigator-item:nth-child(2) .navigation-link:hover,
+.navigator-item:nth-child(3) .navigation-link:hover,
+.navigator-item:nth-child(4) .navigation-link:hover {
     opacity: 0.3;
 }
 
-.navigator-item .navigation-link:nth-child(1):focus,
-.navigator-item .navigation-link:nth-child(2):focus,
-.navigator-item .navigation-link:nth-child(3):focus {
+.navigator-item:nth-child(2) .navigation-link:hover,
+.navigator-item:nth-child(3) .navigation-link:hover,
+.navigator-item:nth-child(4) .navigation-link:hover {
     outline: 2px solid #AF4FFF;
 }
 
@@ -285,6 +304,8 @@ div .navigation-link {
 
 .search label:first-child {
     flex-grow: 1;
+    width: 363px;
+    height: 44px;
 }
 
 .come-in {
@@ -357,13 +378,13 @@ div .navigation-link {
     
 }
 
-.catalog-user img:active {
+.catalog-user svg:active {
     background-image: "../images/header-images/open-catalog.svg";
     width: 50px;
     height: 50px;
 }
 
-.catalog-user img:focus {
+.catalog-user svg:focus {
     border: 2px solid #AF4FFF;
 }
 
@@ -389,7 +410,7 @@ div .navigation-link {
     padding: 2px 6px;
     border-radius: 50px;
     position: relative;
-    left: 5px;
+    left: -15px;
 } 
 
 .page-container {
@@ -440,7 +461,7 @@ div .navigation-link {
 }
 
 .slider-button:focus {
-    border: 2px solid #AF4FFF;
+    outline: 2px solid #AF4FFF;
 }
 
 .slider-image {
@@ -466,7 +487,45 @@ div .navigation-link {
     justify-content: flex-start;
 }
 
-   
+
+.devace-item:nth-child(2) .devace-link {
+    display: block;
+    width: 129px;
+}   
+
+.devace-item:active {
+    opacity: 0.3;
+}
+
+.devace-images {
+    background-color: #FFE17F;
+
+}
+
+.devace-images:hover {
+    background: #FFC700;
+}
+
+
+
+.devace-item:focus {
+    outline: 2px solid #AF4FFF; 
+}
+
+.devace-link {
+    font-family: "raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+
+
+
 .contacts-subtitle {
     margin: 0;
     margin-bottom: 15px;
@@ -812,8 +871,12 @@ div .navigation-link {
 }
 
 .order:hover {
-    opacity: 1;
+    
 
+}
+
+.order::before:hover {
+    background-color: #FFC700;
 }
 
 .order:active {
@@ -821,7 +884,7 @@ div .navigation-link {
 }
 
 .order:focus {
-    border: 2px solid #AF4FFF;
+    outline: 2px solid #AF4FFF;
     
 }
 
@@ -1021,10 +1084,7 @@ div .navigation-link {
 }
 
 
-.devace-item:nth-child(2) .devace-link {
-    display: block;
-    width: 129px;
-}
+
 
 .subscription {
     display: flex;
@@ -1182,33 +1242,6 @@ div .navigation-link {
 
 
 
-.devace-images {
-    background-color: #FFE17F;
-
-}
-
-.devace-images:hover {
-    background: #FFC700;
-}
-
-.devace-item:active {
-    opacity: 0.3;
-}
-
-.devace-images a:focus {
-    border: 2px solid #AF4FFF; 
-}
-
-.devace-link {
-    font-family: "raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 24px;
-    color: inherit;
-    background-color: inherit;
-    text-decoration: none;
-    letter-spacing: -0.02em;
-}
 
 
 
@@ -1443,26 +1476,35 @@ footer-logo-container a {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.social-link:first-child::before {
+.footer-social-item:first-child .social-link::before {
     position: absolute;
     content: "";
     background-image: url("../images/footer-images/facebook.svg");
     width: 9px;
     height: 18px;
-    left: 15px;
-    bottom: 10px;
+    left: 16px;
+    bottom: 11px;
 }
 
-.social-link:nth-child(2)::before {
+.footer-social-item:nth-child(2) .social-link::before {
     position: absolute;
     content: "";
     background-image: url("../images/footer-images/instagtam.svg");
     width: 16px;
     height: 16px;
-    left: 15px;
-    bottom: 10px;
+    left: 12px;
+    bottom: 12px;
 }
 
+.footer-social-item:last-child .social-link::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/footer-images/twitter.svg");
+    width: 15px;
+    height: 14px;
+    left: 13px;
+    bottom: 13px;
+}
 
 .social-link:hover {
     background-color: #FFC700;
@@ -1476,25 +1518,28 @@ footer-logo-container a {
 }
 
 social-link:focus {
-    border: 2px solid #AF4FFF;
+    outline: 2px solid #AF4FFF;
     
 }
 
 .htmlacademy-link {
-    margin-bottom: 65px;
+    
+    fill: #FFC700;
 }
 
 .htmlacademy-link:hover {
-    background-image: "../images/footer-images/logo-htmlacademy-hover.svg";
-    width: 155px;
-    height: 33px;
+    fill: #FFFFFF;
 }
 
 .htmlacademy-link:active {
-    color: #FFFFFF;
+    fill: #FFFFFF;
     opacity: 0.3;
-    outline: 2px solid #AF4FFF;
 }
+
+.htmlacademy-link:focus {
+    outline: 1px solid #AF4FFF;
+}
+
 
 div .monopod-header {
     margin: 0;

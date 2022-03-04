@@ -300,6 +300,7 @@ div .navigation-link {
     border-radius: 50%;
     position: relative;
     opacity: 0.3;
+    background-color: #FFE17F;
 }
 
 .navigator-item-user .navigation-icon {
@@ -381,6 +382,7 @@ div .navigation-link {
     top: 60px;
     left: -40px;
     list-style-type: none;
+    z-index: 1;
 }
 
 .catalog-user-link {
@@ -394,8 +396,20 @@ div .navigation-link {
     
 }
 
+.catalog-user-link:hover {
+    opacity: 0.6;
+}
+
+.catalog-user-link:active {
+    opacity: 0.3;
+}
+
+.catalog-user-link:focus {
+    outline: 2px solid #AF4FFF;
+}
+
 .catalog-user:focus-within .catalog-user-list {
-    display: block;
+    display: grid;
     
 }
 
@@ -690,7 +704,7 @@ div .navigation-link {
 
 }
 
-.services-link:hover {
+.services-delivery-item a:hover {
     color: #FFE17F;
     background-color: #000000;
     padding: 9px 120px 11px 10px;

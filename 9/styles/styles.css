@@ -275,14 +275,32 @@ div .navigation-link {
 
 }
 
-.navigator-item-user button::before {
+.navigator-item-user button {
     position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    opacity: 0.3;
+    border-radius: 50%;
+    background-color: #FFE17F;
+}
+    
+    
+
+.navigator-item-user button::before {
+    position: absolute;
     content: "";
     width: 50px;
     height: 50px;
     background-image: url("../images/header-images/push-catalog.svg");
-    right: px;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: -2px;
+    top: -2px;
+    
 }
+
+
 
 
 .search form {
@@ -381,6 +399,9 @@ div .navigation-link {
   z-index: 1;
 }
 
+.catalog-user:focus-within .navigator-item-user button::before {
+    background-image: url("../images/header-images/open-catalog.svg");
+}
 
 .catalog-user svg:focus {
   border: 2px solid #af4fff;

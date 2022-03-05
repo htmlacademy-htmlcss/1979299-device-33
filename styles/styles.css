@@ -1451,6 +1451,12 @@ footer-logo-container a {
   opacity: 0.3;
 }
 
+.social-link:focus-visible {
+    outline: none;
+}
+    
+
+
 .social-link::after {
     position: absolute;
      content: "";
@@ -1459,11 +1465,6 @@ footer-logo-container a {
   border-radius: 0;
   left: -2px;
   bottom: -2px;
-
-  background-color: #ffc700;
-
-  opacity: 0.3;
-  
 
 }
 

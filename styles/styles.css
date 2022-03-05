@@ -1382,7 +1382,7 @@ footer-logo-container a {
 }
 
 .footer-social-list {
-    position: relative;
+  position: relative;
   display: flex;
   width: 150px;
   list-style-type: none;
@@ -1451,21 +1451,27 @@ footer-logo-container a {
   opacity: 0.3;
 }
 
-.social-link:focus-within {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-  
-}
-.footer-social-item::before {
-    display: block;
+.social-link::after {
     position: absolute;
-  content: "";
+     content: "";
   width: 44px;
   height: 44px;
   border-radius: 0;
+  left: -2px;
+  bottom: -2px;
+
   background-color: #ffc700;
 
+  opacity: 0.3;
+  
+
 }
+
+.social-link:focus::after {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;  
+}
+
 
 
 .htmlacademy-link {

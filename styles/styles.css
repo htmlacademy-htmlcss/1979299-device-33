@@ -1378,6 +1378,7 @@ footer-logo-container a {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  margin-bottom: 61px;
   
 }
 
@@ -1387,7 +1388,7 @@ footer-logo-container a {
   width: 150px;
   list-style-type: none;
   margin: 0;
-  margin-bottom: 61px;
+  
   
 }
 

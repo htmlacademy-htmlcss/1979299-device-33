@@ -399,7 +399,7 @@ div .navigation-link {
   z-index: 1;
 }
 
-.catalog-user:focus-within .navigator-item-user button::before {
+.catalog-user:focus-within button::before {
     background-image: url("../images/header-images/open-catalog.svg");
 }
 
@@ -1019,7 +1019,7 @@ div .navigation-link {
   background-color: #ffcc33;
 }
 
-.about-us .about-us-link:focus-visible {
+.about-us .about-us-link:focus {
   outline: 2px solid #af4fff;
 }
 
@@ -1048,7 +1048,7 @@ div .navigation-link {
   background-color: #ffcc33;
 }
 
-.contacts .about-us-link:focus-visible {
+.contacts .about-us-link:focus {
   outline: 2px solid #af4fff;
 }
 

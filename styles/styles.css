@@ -1093,8 +1093,8 @@ div .navigation-link {
     background-color: #FFCC33;
 }
 
-.about-us .about-us-link:focus {
-   border: 2px solid #AF4FFF; 
+.about-us .about-us-link:focus-visible {
+   outline: 2px solid #AF4FFF; 
 }
 
 .contacts .about-us-link::before {
@@ -1122,8 +1122,8 @@ div .navigation-link {
     background-color: #FFCC33;
 }
 
-.contacts .about-us-link:focus {
-   border: 2px solid #AF4FFF; 
+.contacts .about-us-link:focus-visible {
+   outline: 2px solid #AF4FFF; 
 }
 
 
@@ -1245,7 +1245,7 @@ div .navigation-link {
 }
 
 .gallery-more:focus-visible {
-   border: 2px solid #AF4FFF; 
+   outline: 2px solid #AF4FFF; 
 }
 
 

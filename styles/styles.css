@@ -1072,15 +1072,39 @@ div .navigation-link {
   display: flex;
   justify-content: space-between;
 }
+                            
+
 
 .button-sorting {
+    
   background: transparent;
   border: none;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
   margin: 0;
   padding: 0;
+  align-self: center;
+  opacity: 0.2;
+  width: 30px;
+  height: 30px;
+}
+
+
+.button-sorting:last-child {
+    transform: rotate(180deg);
+}
+
+.button-sorting:hover {
+    opacity: 0.5;
+}
+
+.button-sorting:active {
+    opacity: 1;
+}
+
+.button-sorting:focus {
+   outline: 2px solid #AF4FFF;
+   outline-offset: 4px;
+   
 }
 
 .about-us-canteiner {
@@ -1574,6 +1598,9 @@ div .about-us-link:focus {
   line-height: 30px;
   background: transparent;
   border: none;
+  width: 159px;
+  height: 30px;
+  align-self: center;
 }
 
 .select-control:hover {

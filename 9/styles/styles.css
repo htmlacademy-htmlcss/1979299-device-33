@@ -559,14 +559,20 @@ div .navigation-link {
 }
 
 .services {
-  display: flex;
+    
+  display: none;
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 70px;
   background-color: #f0f0f0;
 }
 
+.active {
+    display: flex; 
+}
+
 .services div {
+    
   display: flex;
   width: 1160px;
   height: 289px;
@@ -576,13 +582,11 @@ div .navigation-link {
 .services-delivery-item {
   display: flex;
   width: 280px;
-
-  margin-top: -40px;
+    margin-bottom: 35px;
+  
 }
 
-.delivery-item {
-    
-}
+ 
 
 .services-delivery-item a {
   font-family: "raleway", sans-serif;
@@ -594,11 +598,21 @@ div .navigation-link {
   text-decoration: none;
   color: #ffe17f;
   background-color: #000000;
+  width: 280px;
 }
 
 .services-delivery-item a:hover {
   color: rgba(255, 225, 127, 0.5);
-  background-color: #000000;
+  
+}
+
+.services-delivery-item a:active {
+    color: rgba(255, 225, 127, 0.3);
+}
+
+.services-delivery-item a:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
 }
 
 
@@ -613,6 +627,7 @@ div .navigation-link {
   padding: 0;
   letter-spacing: 0.2em;
   list-style-type: none;
+  bottom: 40px;
 }
 
 .services-list::before {
@@ -622,14 +637,18 @@ div .navigation-link {
   height: 319px;
   background-color: #000000;
   bottom: 74px;
-  right: 22px;
+  right: -5px;
 }
 
 .services-item {
   display: flex;
   justify-content: center;
-  margin-top: 35px;
+  margin-bottom: 35px;
   width: 160px;
+}
+
+.services-link:focus-visible {
+    outline: none;
 }
 
 .services-link {
@@ -811,6 +830,7 @@ div .navigation-link {
 .delivery .short-description-device-description-item {
   margin-bottom: 200px;
   margin-top: 34px;
+  width: 475px;
 }
 
 .courier {
@@ -878,6 +898,10 @@ div .navigation-link {
 
 .order:hover .order-icon-post {
   opacity: 1;
+}
+
+.order-link:focus-visible {
+    outline: none;
 }
 
 .order-link {
@@ -1595,9 +1619,14 @@ div .about-us-link:active {
   background-color: #ffcc33;
 }
 
-div .about-us-link:focus {
-  border: 2px solid #af4fff;
+div .about-us-link:focus-visible {
+  outline: 2px solid #af4fff;
 }
+
+.div .about-us-link:disabled {
+    opacity: 0.3;
+}
+
 
 .select-control {
   font-family: "rubik", sans-serif;

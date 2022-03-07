@@ -267,15 +267,6 @@ div .navigation-link {
 
 
 .navigator-item-user button {
-    
-    margin: 0;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-
-}
-
-.navigator-item-user button {
     position: relative;
     width: 50px;
     height: 50px;
@@ -283,11 +274,19 @@ div .navigation-link {
     opacity: 0.3;
     border-radius: 50%;
     background-color: #FFE17F;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
 }
+
+
+.catalog-user .navigation-link-user:hover {
+    opacity: 1;
     
+}    
     
 
-.navigator-item-user button::before {
+.catalog-user button::before {
     position: absolute;
     content: "";
     width: 50px;
@@ -300,8 +299,18 @@ div .navigation-link {
     
 }
 
+.catalog-user:focus-within .catalog-user-list {
+    display: grid;
+    z-index: 1;
+  }
+  
+  .catalog-user:focus-within button::before {
+      background-image: url("../images/header-images/open-catalog.svg");
+  }
 
-
+  .catalog-user:hover button::before {
+      fill: #000000;
+  }
 
 .search form {
   display: flex;
@@ -394,18 +403,7 @@ div .navigation-link {
   outline: 2px solid #af4fff;
 }
 
-.catalog-user:focus-within .catalog-user-list {
-  display: grid;
-  z-index: 1;
-}
 
-.catalog-user:focus-within button::before {
-    background-image: url("../images/header-images/open-catalog.svg");
-}
-
-.catalog-user svg:focus {
-  border: 2px solid #af4fff;
-}
 
 .service-user {
   width: 127px;
@@ -753,8 +751,6 @@ div .navigation-link {
   letter-spacing: 0.2em;
 }
 
-.navigation-link-user:disabled {
-}
 
 .navigation-link-user:hover {
   opacity: 0.6;
@@ -768,9 +764,6 @@ div .navigation-link {
   outline: 2px solid #af4fff;
 }
 
-.navigation-link-user:enabled {
-  border-bottom: 2px solid #000000;
-}
 
 .namber-one-device-list {
   margin: 0;
@@ -1048,6 +1041,10 @@ div .navigation-link {
   outline: 2px solid #af4fff;
 }
 
+.about-us .about-us-link:disabled {
+    opacity: 0.3;
+}
+
 .contacts .about-us-link::before {
   position: absolute;
   content: "";
@@ -1075,6 +1072,10 @@ div .navigation-link {
 
 .contacts .about-us-link:focus {
   outline: 2px solid #af4fff;
+}
+
+.contacts .about-us-link:disabled {
+    opacity: 0.3;
 }
 
 .contacts > .about-us-paragraph {
@@ -1173,6 +1174,21 @@ div .navigation-link {
   text-decoration-skip-ink: none;
   color: #444444;
 }
+
+.contacts-phone-link:hover {
+    color: #FFC700;
+}
+
+.contacts-phone-link:active {
+    color: #FFC700;
+    opacity: 0.3;
+}
+
+.contacts-phone-link:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+
 
 .gallery-more {
   position: relative;

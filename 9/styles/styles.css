@@ -597,6 +597,8 @@ div .navigation-link {
   background-color: #000000;
 }
 
+
+
 .services-delivery {
   padding: 9px 120px 11px 10px;
 }
@@ -653,11 +655,7 @@ div .navigation-link {
   z-index: -1;
 }
 
-.services-delivery-item a:hover {
-  color: #ffe17f;
-  background-color: #000000;
-  
-}
+
 
 .delivery {
   display: flex;
@@ -1191,6 +1189,10 @@ div .navigation-link {
   outline: 2px solid #af4fff;
 }
 
+.gallery-more:disabled {
+    opacity: 0.3;
+}
+
 .select-container {
   display: flex;
   width: 560px;
@@ -1312,7 +1314,7 @@ form .catalog-filter-group:first-child {
   margin-bottom: 35px;
 }
 
-footer-logo-container a {
+.footer-logo-container a {
   display: flex;
   width: 149px;
   height: 40px;

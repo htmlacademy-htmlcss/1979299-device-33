@@ -603,7 +603,16 @@ div .navigation-link {
 
 .services-delivery-item a:hover {
   color: rgba(255, 225, 127, 0.5);
-  background-color: #000000;
+  
+}
+
+.services-delivery-item a:active {
+    color: rgba(255, 225, 127, 0.3);
+}
+
+.services-delivery-item a:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
 }
 
 
@@ -628,7 +637,7 @@ div .navigation-link {
   height: 319px;
   background-color: #000000;
   bottom: 74px;
-  right: 0;
+  right: -5px;
 }
 
 .services-item {
@@ -636,6 +645,10 @@ div .navigation-link {
   justify-content: center;
   margin-bottom: 35px;
   width: 160px;
+}
+
+.services-link:focus-visible {
+    outline: none;
 }
 
 .services-link {
@@ -885,6 +898,10 @@ div .navigation-link {
 
 .order:hover .order-icon-post {
   opacity: 1;
+}
+
+.order-link:focus-visible {
+    outline: none;
 }
 
 .order-link {
@@ -1602,9 +1619,14 @@ div .about-us-link:active {
   background-color: #ffcc33;
 }
 
-div .about-us-link:focus {
-  border: 2px solid #af4fff;
+div .about-us-link:focus-visible {
+  outline: 2px solid #af4fff;
 }
+
+.div .about-us-link:disabled {
+    opacity: 0.3;
+}
+
 
 .select-control {
   font-family: "rubik", sans-serif;

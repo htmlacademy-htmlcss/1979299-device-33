@@ -1933,7 +1933,7 @@ pagination-disabled {
 
 .pagination div {
   flex-wrap: wrap;
-  width: 200px;
+  min-width: 200px;
   height: 40px;
   align-items: center;
   justify-content: space-between;

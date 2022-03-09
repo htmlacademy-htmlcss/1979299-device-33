@@ -1392,11 +1392,11 @@ div .navigation-link {
 
 }
 
-.control-input:focus-visible + .control-mark::before {
+.control-input:focus + .control-mark::before {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
   
 }
-
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
@@ -1408,8 +1408,24 @@ div .navigation-link {
   
 }
 
-.control-input[type="checkbox"]:checked + .control-mark {
+.control-input[type="checkbox"]:checked + .control-mark,
+.control-input[type="radio"]:checked + .control-mark {
   border: 2px solid #000000;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  content: "";
 }
 
 .button {
@@ -1882,6 +1898,10 @@ div .about-us-link:focus-visible {
 .range-wrapper-inputs {
   display: flex;
  
+}
+
+.catalog-filter-group:not(:last-child) {
+  margin-bottom: 35px;
 }
 
 .catalog-filter-label:first-child {

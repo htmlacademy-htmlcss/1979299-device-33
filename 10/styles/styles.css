@@ -176,7 +176,7 @@ body {
   bottom: 15px;
 }
 
-.compare-link::before {
+.compare .navigation-link::before {
   position: absolute;
   content: "";
   width: 10px;
@@ -1293,6 +1293,7 @@ div .navigation-link {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
+  width: 71px;
 }
 
 .catalog-filter-group:first-child input::placeholder {
@@ -1692,6 +1693,10 @@ div .about-us-link:focus-visible {
   margin: auto;
 }
 
+.filter-container > div {
+  width: 320px;
+}
+
 .product {
   flex-direction: column;
   background-color: #ffffff;
@@ -1866,10 +1871,6 @@ div .about-us-link:focus-visible {
   margin-bottom: 78px;
 }
 
-.pagination-item:not(:first-child),
-.pagination-item:not(:last-child) {
-  margin-right: 10px;
-}
 
 .pagination-link {
   display: inline-block;

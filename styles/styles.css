@@ -176,6 +176,16 @@ body {
   bottom: 15px;
 }
 
+.compare-link::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 12px;
+  background-image: url("../images/header-images/compare.svg");
+  left: 5px;
+  bottom: 15px;
+}
+
 .navigator-item:last-child .navigation-link::before {
   position: absolute;
   content: "";
@@ -1939,6 +1949,7 @@ pagination-disabled {
   justify-content: space-between;
   margin-top: 15.5px;
   margin-bottom: 15.5px;
+  
 }
 
 .pagination-item:first-child {

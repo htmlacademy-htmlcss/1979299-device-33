@@ -1341,32 +1341,6 @@ div .navigation-link {
   background-color: inherit;
 }
 
-.catalog-filter-group:first-child input {
-  font-family: "rubik", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  width: 71px;
-}
-
-.catalog-filter-group:first-child input::placeholder {
-  color: #000000;
-  opacity: 0.3;
-}
-
-form .catalog-filter-group:first-child {
-  display: flex;
-}
-
-.catalog > div {
-  width: 1160px;
-}
-
-.catalog-filter-group,
-.catalog-filter-list {
-  list-style-type: none;
-}
-
 .contacts-address .about-us-paragraph {
   font-style: normal;
   text-decoration-line: underline;
@@ -1750,11 +1724,56 @@ div .about-us-link:focus-visible {
 .filter-container > div {
   width: 320px;
   margin-top: 12px;
+  
 }
+
+
 
 .catalog-filter-item {
   margin-bottom: 11px;
 }
+
+
+.catalog-filter-group:first-child input {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  width: 71px;
+}
+
+.catalog-filter-group:first-child input::placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
+
+form .catalog-filter-group:first-child {
+  display: flex;
+}
+
+.catalog > div {
+  width: 1160px;
+}
+
+.catalog-filter-group,
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: #DCDCDC;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
 
 
 .product {

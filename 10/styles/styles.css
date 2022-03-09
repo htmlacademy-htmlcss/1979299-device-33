@@ -51,12 +51,59 @@ body {
   border-bottom: solid 3px #c4c4c4;
 }
 
+.subscription-mail::placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.subscription-mail:hover {
+  outline: none;
+}
+
+.subscription-mail:active {
+  outline: none;
+}
+
+.subscription-mail:focus {
+  background-color:  #DCDCDC;
+  outline: none;
+}
+
+.subscription-mail:disabled {
+  opacity: 0.3;
+}
+
+.subscription-mail:invalid {
+  border-bottom: solid 3px rgba(255, 61, 61, 1);
+}
+
+
 .subscription-form .button {
   margin: 0;
   border: 3px solid #cecece;
   padding: 15px 39px;
   cursor: pointer;
 }
+
+.subscription-form .button:disabled {
+  opacity: 0.3;
+}
+
+.subscription-form .button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 3px solid #000000;
+}
+
+.subscription-form .button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-form .button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+
 
 .its-free {
   display: flex;
@@ -67,10 +114,7 @@ body {
   width: auto;
 }
 
-.subscription-mail::placeholder {
-  color: #444444;
-  opacity: 0.5;
-}
+
 
 .navigation-search-field {
   width: 100%;
@@ -1005,6 +1049,7 @@ div .navigation-link {
   color: #000000;
   background-color: inherit;
   letter-spacing: -0.02em;
+  margin-bottom: 20px;
 }
 
 .about-us-link {
@@ -1109,9 +1154,17 @@ div .navigation-link {
 .sorting div {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
-                            
+     
+.sorting {
+  margin-top: 20px;
+}
 
+.sorting .filter-title {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
 
 .button-sorting {
   background: transparent;
@@ -1623,6 +1676,7 @@ div .monopod-header {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  margin-bottom: 60px;
 }
 
 div .about-us-link {
@@ -1668,7 +1722,7 @@ div .about-us-link:focus-visible {
   border: none;
   width: 159px;
   height: 30px;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .select-control:hover {
@@ -1695,7 +1749,13 @@ div .about-us-link:focus-visible {
 
 .filter-container > div {
   width: 320px;
+  margin-top: 12px;
 }
+
+.catalog-filter-item {
+  margin-bottom: 11px;
+}
+
 
 .product {
   flex-direction: column;
@@ -1717,6 +1777,11 @@ div .about-us-link:focus-visible {
     position: relative;
 }
 
+.product-card .about-us-name {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
 .product-card-link {
   display: grid;
   grid-template-columns: auto auto;
@@ -1731,7 +1796,17 @@ div .about-us-link:focus-visible {
 
 }
 
-.product-card-link:hover::before {
+.product-card-link:hover .about-us-name {
+  opacity: 0.6;
+}
+
+.product-card-link:active .about-us-name, 
+.product-card-link:active .product-card-price {
+  opacity: 0.3;
+}
+
+.product-card-link:hover::before,
+.product-card-link:active::before {
     position: absolute;
     content: "";
     width: 360px;
@@ -1740,7 +1815,8 @@ div .about-us-link:focus-visible {
     background: rgba(240, 240, 240, 0.8);
 }
 
-.product-card-link:hover::after {
+.product-card-link:hover::after,
+.product-card-link:active::after {
     position: absolute;
     content: "";
     width: 220px;
@@ -1777,9 +1853,12 @@ div .about-us-link:focus-visible {
   z-index: 1;
 }
 
-.product-card-link:hover .product-more {
+.product-card-link:hover .product-more,
+.product-card-link:active .product-more {
   display: block;
 }
+
+
 
 .product-card-link:active::after {
     background-color: #FFC700;;
@@ -1826,6 +1905,10 @@ div .about-us-link:focus-visible {
   outline-offset: 2px;
 }
 
+.button-product:disabled {
+  opacity: 0.3;
+}
+
 .product-card-image {
   grid-column: 1/-1;
 }
@@ -1840,6 +1923,7 @@ div .about-us-link:focus-visible {
   margin: 0;
   padding: 0;
   margin-left: 50px;
+  margin-bottom: 35px;
   width: 541px;
   justify-content: flex-start;
   list-style-type: none;
@@ -1893,7 +1977,7 @@ div .about-us-link:focus-visible {
 }
 
 .pagination-link:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .pagination-link:focus {

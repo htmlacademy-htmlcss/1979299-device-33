@@ -1293,6 +1293,7 @@ div .navigation-link {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
+  width: 71px;
 }
 
 .catalog-filter-group:first-child input::placeholder {
@@ -1690,6 +1691,10 @@ div .about-us-link:focus-visible {
   display: flex;
   width: 1160px;
   margin: auto;
+}
+
+.filter-container > div {
+  width: 320px;
 }
 
 .product {

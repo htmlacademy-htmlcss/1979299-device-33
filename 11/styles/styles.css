@@ -1306,6 +1306,7 @@ div .navigation-link {
 
 .select-container {
   display: flex;
+  
   width: 560px;
   justify-content: space-between;
   margin-top: 0;
@@ -1313,18 +1314,20 @@ div .navigation-link {
 }
 
 .select-container form {
-  width: 76px;
+  
   display: flex;
 }
 
 .select {
   display: block;
-  position: relative;
+ 
+
+  
 }
 
 .select-control-mark {
-  position: absolute;
-  content: "";
+  position: relative;
+  display: block;
   width: 12px;
   height: 12px;
   border: 2px solid #000000;
@@ -1342,9 +1345,10 @@ div .navigation-link {
   height: 16px;
   left: -2px;
   bottom: -2px;
-  background-color: #FFC700;
-  opacity: 0.2;
+  
 }
+
+
 
 .select:hover .select-control-mark {
   opacity: 0.6;
@@ -1484,6 +1488,21 @@ div .navigation-link {
   border-radius: 50%;
   content: "";
 }
+
+.control-input[type="radio"] + .control-mark::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  left: -2px;
+  bottom: -2px;
+  
+}
+
+.control-input[type="radio"]:focus + .control-mark::after {
+  outline: 2px solid #AF4FFF;
+}
+
 
 .button {
   width: 253px;

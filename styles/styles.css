@@ -1314,8 +1314,10 @@ div .navigation-link {
 }
 
 .select-container form {
-  
+  width: 76px;
+  justify-content: space-between;
   display: flex;
+  
 }
 
 .select {
@@ -1334,7 +1336,7 @@ div .navigation-link {
   background-color: #ffffff;
   border-radius: 50%;
   left: 3px;
-  bottom: 21px;
+  bottom: -12px;
 
 }
 
@@ -1366,6 +1368,10 @@ div .navigation-link {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
   
+}
+
+.select-input[type="radio"]:checked + .select-control-mark {
+  background: #000000;
 }
 
 .short-description-slaider-table {

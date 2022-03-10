@@ -1151,57 +1151,8 @@ div .navigation-link {
   margin: auto;
 }
 
-.sorting div {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-     
-.sorting {
-  margin-top: 20px;
-}
 
-.sorting .filter-title {
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-
-.button-sorting {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-  align-self: center;
-  opacity: 0.2;
-  width: 30px;
-  height: 30px;
-}
-
-
-
-.button-sorting:last-child {
-    transform: rotate(180deg);
-}
-
-.button-sorting:hover {
-    opacity: 0.5;
-}
-
-.button-sorting:active {
-    opacity: 1;
-}
-
-.button-sorting:focus {
-   outline: 2px solid #AF4FFF;
-   outline-offset: 4px;
-   opacity: 1; 
-}
-
-.button-sorting:focus svg {
-  opacity: 0.2;
-}
-
+  
 .about-us-canteiner {
   display: flex;
   justify-content: space-between;
@@ -1302,76 +1253,6 @@ div .navigation-link {
 
 .gallery-more:disabled {
     opacity: 0.3;
-}
-
-.select-container {
-  display: flex;
-  
-  width: 560px;
-  justify-content: space-between;
-  margin-top: 0;
-  margin-bottom: 49px;
-}
-
-.select-container form {
-  width: 76px;
-  justify-content: space-between;
-  display: flex;
-  
-}
-
-.select {
-  display: block;
- 
-
-  
-}
-
-.select-control-mark {
-  position: relative;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #000000;
-  background-color: #ffffff;
-  border-radius: 50%;
-  left: 3px;
-  bottom: -12px;
-
-}
-
-.select-control-mark::before {
-  position: absolute;
-  content: "";
-  width: 16px;
-  height: 16px;
-  left: -2px;
-  bottom: -2px;
-  
-}
-
-
-
-.select:hover .select-control-mark {
-  opacity: 0.6;
-}
-
-.select:hover .select-control-mark {
-  opacity: 0.3;
-}
-
-.select-input:disabled + .select-control-mark {
-  opacity: 0.1;
-}
-
-.select-input:focus + .select-control-mark::before {
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
-  
-}
-
-.select-input[type="radio"]:checked + .select-control-mark {
-  background: #000000;
 }
 
 .short-description-slaider-table {
@@ -1841,6 +1722,138 @@ div .about-us-link:focus-visible {
     opacity: 0.3;
 }
 
+.sorting div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  ;
+  
+}
+   
+.sorting {
+  margin-top: 20px;
+}
+
+.sorting .filter-title {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.button-sorting {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  opacity: 0.2;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.button-sorting:last-child {
+    transform: rotate(180deg);
+}
+
+.button-sorting:hover {
+    opacity: 0.5;
+}
+
+.button-sorting:active {
+    opacity: 1;
+}
+
+.button-sorting:focus {
+   outline: 2px solid #AF4FFF;
+   outline-offset: 4px;
+   opacity: 1; 
+}
+
+.button-sorting:focus svg {
+  opacity: 0.2;
+}
+
+
+.select-container {
+  display: flex;
+  
+  width: 560px;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 49px;
+}
+
+.select-container form {
+  width: 76px;
+  justify-content: space-between;
+  display: flex;
+  
+}
+
+.select {
+  display: block;
+ 
+
+  
+}
+
+.select-control-mark {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  border-radius: 50%;
+  left: 3px;
+  bottom: -12px;
+
+}
+
+.select-control-mark::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: -2px;
+  bottom: -2px;
+  
+}
+
+
+
+.select:hover .select-control-mark {
+  opacity: 0.6;
+}
+
+.select:hover .select-control-mark {
+  opacity: 0.3;
+}
+
+.select-input:disabled + .select-control-mark {
+  opacity: 0.1;
+}
+
+.select-input:focus + .select-control-mark::before {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  
+}
+
+.select-input[type="radio"]:checked + .select-control-mark {
+  background: #000000;
+}
+
+
+.sorting-select {
+ position: relative;
+  display: flex;
+  align-items: center;
+  width: 159px;
+  
+}
 
 .select-control {
   font-family: "rubik", sans-serif;
@@ -1849,9 +1862,15 @@ div .about-us-link:focus-visible {
   line-height: 30px;
   background: transparent;
   border: none;
-  width: 159px;
+  width: 100%;
   height: 30px;
   align-self: flex-start;
+  padding-right: 50px;
+  background-image: url("../images/catalog-images/select-control.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  appearance: none;
+
 }
 
 .select-control:hover {

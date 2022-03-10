@@ -483,10 +483,15 @@ div .navigation-link {
 }
 
 .gallery {
-  display: flex;
+  display: none;
   width: 1160px;
   margin: auto;
 }
+
+.active-gallery {
+  display: flex;
+}
+
 
 .slider-container {
   display: flex;
@@ -1282,6 +1287,19 @@ div .navigation-link {
   line-height: 30px;
   color: #444444;
   background-color: inherit;
+}
+
+.selfie-stick-table {
+  width: 385px;
+}
+
+.selfie-stick-title {
+  margin-right: 41px;
+}
+
+.selfi-stick-meaning {
+  margin: 0;
+  margin-right: -10px;
 }
 
 .contacts-address .about-us-paragraph {

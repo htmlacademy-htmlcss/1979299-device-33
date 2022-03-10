@@ -1446,9 +1446,14 @@ div .navigation-link {
 
 .control-input:focus + .control-mark::before {
   outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
+  outline-offset: 8px;
   
 }
+
+.control-input:checked:focus + .control-mark::before {
+  outline-offset: 8px;
+}
+    
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
@@ -1973,9 +1978,23 @@ div .about-us-link:focus-visible {
  
 }
 
+.catalog-filter-group {
+  position: relative;
+}
+
 .catalog-filter-group:not(:last-child) {
   margin-bottom: 35px;
 }
+
+.catalog-filter-group::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 2px;
+  background: #000000;
+  top: -49px;
+}
+
 
 .catalog-filter-label:first-child {
   display: flex;

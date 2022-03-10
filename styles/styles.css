@@ -1485,6 +1485,21 @@ div .navigation-link {
   content: "";
 }
 
+.control-input[type="radio"] + .control-mark::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  left: -2px;
+  bottom: -2px;
+  
+}
+
+.control-input[type="radio"]:focus + .control-mark::after {
+  outline: 2px solid #AF4FFF;
+}
+
+
 .button {
   width: 253px;
 

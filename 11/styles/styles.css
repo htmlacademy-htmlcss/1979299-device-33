@@ -1312,6 +1312,31 @@ div .navigation-link {
   margin-bottom: 49px;
 }
 
+.select-container form {
+  width: 76px;
+  display: flex;
+}
+
+.select {
+  display: block;
+  position: relative;
+}
+
+.select-control-mark::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  border-radius: 50%;
+  left: 3px;
+  bottom: 23px;
+}
+
+
+
+
 .short-description-slaider-table {
   display: flex;
   width: 307px;
@@ -1352,7 +1377,80 @@ div .navigation-link {
 }
 
 .control {
+  display: block;
+  position: relative;
   line-height: 19px;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #CCCCCC;
+  left: -40px;
+  top: -2px;
+  border-radius: 3px;
+}
+
+.control:hover .control-mark, 
+.control:hover .control-label {
+  opacity: 0.6;
+}
+
+.control:active .control-mark, 
+.control:active .control-label {
+  opacity: 0.3;
+}
+
+
+.control-input:disabled + .control-mark + .control-label {
+  opacity: 0.1;
+}
+
+.control-mark::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  left: -2px;
+  bottom: -2px;
+
+}
+
+.control-input:focus + .control-mark::before {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  background-image: url("../images/catalog-images/checked.svg");
+  left: 5px;
+  bottom: 5px;
+  width: 10px;
+  height: 10px;
+  
+}
+
+.control-input[type="checkbox"]:checked + .control-mark,
+.control-input[type="radio"]:checked + .control-mark {
+  border: 2px solid #000000;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  content: "";
 }
 
 .button {
@@ -1728,7 +1826,6 @@ div .about-us-link:focus-visible {
 }
 
 
-
 .catalog-filter-item {
   margin-bottom: 11px;
 }
@@ -1742,14 +1839,6 @@ div .about-us-link:focus-visible {
   width: 71px;
 }
 
-.catalog-filter-group:first-child input::placeholder {
-  color: #000000;
-  opacity: 0.3;
-}
-
-form .catalog-filter-group:first-child {
-  display: flex;
-}
 
 .catalog > div {
   width: 1160px;
@@ -1760,12 +1849,20 @@ form .catalog-filter-group:first-child {
   list-style-type: none;
 }
 
+.catalog-filter-group {
+  border: none;
+}
+
+.price-range {
+  margin: auto;
+}
 
 .range-scale {
   position: relative;
   height: 2px;
   margin-bottom: 11px;
   background-color: #DCDCDC;
+  width: 200px;
 }
 
 .range-bar {
@@ -1773,6 +1870,97 @@ form .catalog-filter-group:first-child {
   height: 2px;
   background-color: #000000;
 }
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: rgba(235, 235, 235, 1);
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  
+}
+
+.range-toggle:active {
+  background: #000000;
+}
+
+.range-toggle::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  left: -3px;
+  bottom: -3px;
+
+  
+}
+
+.range-toggle:focus {
+  outline: none;
+}
+
+.range-toggle:focus::before {
+  outline: 2px solid #AF4FFF;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+ 
+}
+
+.catalog-filter-group:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.catalog-filter-label:first-child {
+  display: flex;
+  margin-right: 67px;
+  margin-top: 7px;
+  
+}
+
+.catalog-filter-label:last-child {
+  display: flex;
+  margin-top: 3px;
+}
+
+.range-input {
+  width: 59px;
+  padding: 0;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  
+  
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+
 
 
 

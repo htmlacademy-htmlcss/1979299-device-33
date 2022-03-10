@@ -1322,7 +1322,7 @@ div .navigation-link {
   position: relative;
 }
 
-.select-control-mark::before {
+.select-control-mark {
   position: absolute;
   content: "";
   width: 12px;
@@ -1331,11 +1331,38 @@ div .navigation-link {
   background-color: #ffffff;
   border-radius: 50%;
   left: 3px;
-  bottom: 23px;
+  bottom: 21px;
+
 }
 
+.select-control-mark::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: -2px;
+  bottom: -2px;
+  background-color: #FFC700;
+  opacity: 0.2;
+}
 
+.select:hover .select-control-mark {
+  opacity: 0.6;
+}
 
+.select:hover .select-control-mark {
+  opacity: 0.3;
+}
+
+.select-input:disabled + .select-control-mark {
+  opacity: 0.1;
+}
+
+.select-input:focus + .select-control-mark::before {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  
+}
 
 .short-description-slaider-table {
   display: flex;
@@ -1831,13 +1858,34 @@ div .about-us-link:focus-visible {
 }
 
 
-.catalog-filter-group:first-child input {
+.range-input {
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  width: 71px;
+  padding: 0;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  width: 30px;
 }
+
+.catalog-filter-label:last-child input {
+  width: 58px;
+}
+
+.catalog-filter-label {
+  opacity: 0.3;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 
 
 .catalog > div {
@@ -1939,24 +1987,6 @@ div .about-us-link:focus-visible {
 .catalog-filter-label:last-child {
   display: flex;
   margin-top: 3px;
-}
-
-.range-input {
-  width: 59px;
-  padding: 0;
-  font: inherit;
-  text-align: center;
-  background-color: transparent;
-  border: none;
-  appearance: textfield;
-  
-  
-}
-
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
 }
 
 

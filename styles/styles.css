@@ -2405,11 +2405,11 @@ pagination-disabled {
 }
 
  
-.modal-container-close {
+/* .modal-container-close {
   display: none;
 }
 
- 
+  */
 .modal {
   position: relative;
   margin: auto;
@@ -2438,6 +2438,19 @@ pagination-disabled {
   background-position: center;
   cursor: pointer;
 } 
+
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
 
 .modal-title {
   margin: 0;
@@ -2504,16 +2517,63 @@ pagination-disabled {
   color: #FF3D3D;
 }
 
-.auth-form .field::before {
+.auth-form-title {
+  position: relative;
+}
+
+/* .field-group:first-child .auth-form-title::before {
   position: absolute;
   content: "";
   width: 13px;
   height: 12px;
   background-image: url("../images/header-images/inter.svg");
   left: 5px;
-  z-index: 4;
+  
+} */
+
+.field-icon:first-child .auth-form-title::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 12px;
+  background-image: url("../images/modal-images/name-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 60px;
+  top: 55px;
+  
 }
 
+.field-icon:last-child .auth-form-title::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 12px;
+  background-image: url("../images/modal-images/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 60px;
+  top: 55px;
+  
+}
+
+
+.meaning-title {
+  position: absolute;
+  right: 147px;
+  bottom: 214px;
+  cursor: pointer;
+}
+
+.meaning-title::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/modal-images/auth-meaning.svg");
+  width: 26px;
+  height: 26px;
+  left: 118px;
+  bottom: -4px;
+}
 
 
 .auth-form-title {
@@ -2539,6 +2599,10 @@ pagination-disabled {
   display: flex;
 
 }
+
+.auth-meaning-container:invalid {
+  border: 2px solid #FF3D3D;
+} 
 
 .auth-meaning {
   position: relative;

@@ -595,13 +595,31 @@ class="short-description-device-description-item">Самая длинная па
       </div>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
+
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <h3 class="auth-form-title">Ваше имя:</h3>
+              <label class="visually-hidden" for="auth-form-name">Введите имя</label>
+              <input class="auth-form-field field" type="text" id="auth-form-name" name="auth-form-name" placeholder="Введите имя">
+          
+              <span>Добавьте имя</span>
+            </div>
+            <div class="field-group">
+              <h3 class="auth-form-title">Ваш e-mail:</h3>
+              <label class="visually-hidden" for="auth-form-mail">Введите e-mail</label>
+              <input class="auth-form-field field" type="text" id="auth-form-mail" name="auth-form-mail" placeholder="почта">
+              <div></div>
+              <span>Забавный у вас адрес</span>
+            </div>
+          </form>
+
         </section>
 
       </div>

@@ -2509,6 +2509,10 @@ pagination-disabled {
   opacity: 0.3;
 }
 
+.auth-form .fiel:disabled .auth-form-title::before {
+  opacity: 0.3;
+}
+
 .auth-form .field:invalid {
   border: 2px solid #FF3D3D;
 }
@@ -2521,15 +2525,7 @@ pagination-disabled {
   position: relative;
 }
 
-/* .field-group:first-child .auth-form-title::before {
-  position: absolute;
-  content: "";
-  width: 13px;
-  height: 12px;
-  background-image: url("../images/header-images/inter.svg");
-  left: 5px;
-  
-} */
+
 
 .field-icon:first-child .auth-form-title::before {
   position: absolute;
@@ -2552,7 +2548,7 @@ pagination-disabled {
   background-image: url("../images/modal-images/mail.svg");
   background-repeat: no-repeat;
   background-position: center;
-  right: 60px;
+  right: 24px;
   top: 55px;
   
 }

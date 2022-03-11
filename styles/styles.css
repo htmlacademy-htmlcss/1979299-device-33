@@ -1939,6 +1939,9 @@ div .about-us-link:focus-visible {
   width: 30px;
 }
 
+
+
+
 .catalog-filter-label:last-child input {
   width: 58px;
 }
@@ -1946,6 +1949,13 @@ div .about-us-link:focus-visible {
 .catalog-filter-label {
   opacity: 0.3;
 }
+
+
+.range-wrapper-inputs:focus + .catalog-filter-label {
+  opacity: 1;
+outline: 2px solid rgba(175, 79, 255, 1);
+}
+
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -2364,3 +2374,40 @@ pagination-disabled {
 .pagination-item:last-child {
   margin-left: auto;
 }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 72px 80px;
+  background-color: #ffffff;
+}
+
+.modal-auth {
+  width: 760px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width:26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+} 

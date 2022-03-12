@@ -2731,8 +2731,8 @@ label .auth-input:focus {
 
 .popover-basket {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 43px;
+  right: -88px;
   box-sizing: border-box;
   z-index: 1;
   font-family: "rubik", sans-serif;
@@ -2745,6 +2745,7 @@ label .auth-input:focus {
   margin: 0;
   width: 320px;
   min-height: 300px;
+  display: none;
 }
 
 .popover-basket::before {
@@ -2769,8 +2770,23 @@ label .auth-input:focus {
   justify-content: space-between;
 }
 
+.bascet-item:hover {
+  opacity: 0.6;
+}
+
+.bascet-item:active {
+  opacity: 0.3;
+}
+
+.bascet-item:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+
 .bascet-item + .bascet-item {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .basket-item-title {
@@ -2802,6 +2818,22 @@ label .auth-input:focus {
   background-position: 10px center;
 }
 
+.basket-item-button::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  z-index: 2;
+  left: 8px;
+  bottom: -2px;
+  
+  
+}
+
+.bascet-item .basket-item-button:focus {
+  outline: none;
+}
+
 .number-product-input {
   width: 20px;
   font-family: "rubik", sans-serif;
@@ -2813,6 +2845,10 @@ label .auth-input:focus {
   border: none;
   appearance: textfield;
   text-align: center;
+}
+
+.number-product-input:focus {
+  outline: none;
 }
 
 .basket-label:last-child .number-product-input {
@@ -2842,6 +2878,27 @@ label .auth-input:focus {
   text-transform: uppercase;
   background-color: #ffffff;
   color: #000000;
-  padding: 14.5px 25px;
+  padding: 13px 22px;
   flex-wrap: nowrap;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button-basket-form:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button-basket-form:hover {
+  background: #FFE17F;
+
+}
+
+.button-basket-form:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button-basket-form:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }

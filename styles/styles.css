@@ -2404,10 +2404,10 @@ pagination-disabled {
   z-index: 2;
 }
 
-/*  
+ 
 .modal-container-close {
   display: none;
-} */
+}
 
  
 .modal {
@@ -2575,7 +2575,7 @@ pagination-disabled {
   bottom: -4px;
 }
 
-.meaning-title:hover .popover {
+.popover-open {
   display: block;
 }
 
@@ -2679,7 +2679,7 @@ label .auth-input:focus {
 }
 
 .popover {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 41px;
   right: 0;
@@ -2726,3 +2726,5 @@ label .auth-input:focus {
 .popover-content {
   height: 100%;
 }
+
+popover-basket

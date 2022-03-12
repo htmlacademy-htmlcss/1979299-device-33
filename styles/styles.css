@@ -2553,11 +2553,15 @@ pagination-disabled {
   
 }
 
+.meaning-title-container {
+  align-self: flex-start;
+  position: relative;
+}
+
 
 .meaning-title {
-  position: absolute;
-  right: 147px;
-  bottom: 214px;
+  display: block;
+
   cursor: pointer;
 }
 
@@ -2569,6 +2573,10 @@ pagination-disabled {
   height: 26px;
   left: 118px;
   bottom: -4px;
+}
+
+.meaning-title:hover .popover {
+  display: block;
 }
 
 
@@ -2600,6 +2608,10 @@ pagination-disabled {
   border: 2px solid #FF3D3D;
 } 
 
+.auth-meaning:focus {
+  outline: none;
+}
+
 .auth-meaning {
   position: relative;
   width: 60px;
@@ -2621,7 +2633,7 @@ label .auth-input {
   width: 16px;
   height: 2px;
   background-color: #000000;
-  right: 17px;
+  right: 21px;
 } 
 
 .meaning-max::after {
@@ -2630,7 +2642,7 @@ label .auth-input {
   width: 16px;
   height: 2px;
   background-color: #000000;
-  right: 17px;
+  right: 21px;
   transform: rotate(90deg);
 }
 
@@ -2656,9 +2668,61 @@ label .auth-input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+label .auth-input:focus {
+  outline: none;
+}
 
 .auth-bring-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.popover {
+  /* display: none; */
+  position: absolute;
+  top: 41px;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 200px;
+  min-height: 166px;
+  color: #FFFFFF;
+  background: #000000;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 19px 17px 0 19px;
+  margin: 0;
+}
+
+
+.popover::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #000000;
+  transform: rotate(45deg);
+  top: -8px;
+  right: 41px;
+}
+
+
+.popover-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
+
+.popover p {
+  margin: 0;
+  padding: 0;
+}
+
+.popover-content {
+  height: 100%;
 }

@@ -385,6 +385,7 @@ div .navigation-link {
 }
 
 .basket {
+  position: relative;
   width: 98px;
   margin-left: 36px;
   margin-right: 60px;
@@ -2708,6 +2709,7 @@ label .auth-input:focus {
   transform: rotate(45deg);
   top: -8px;
   right: 41px;
+  
 }
 
 
@@ -2727,4 +2729,119 @@ label .auth-input:focus {
   height: 100%;
 }
 
-popover-basket
+.popover-basket {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #000000;
+  padding: 20px;
+  margin: 0;
+  width: 320px;
+  min-height: 300px;
+}
+
+.popover-basket::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #000000;
+  transform: rotate(45deg);
+  top: -8px;
+  right: 150px;
+  
+}
+
+.basket-items-list {
+  padding: 0;
+}
+
+.bascet-item {
+  display: flex;
+  height: 43px;
+  justify-content: space-between;
+}
+
+.bascet-item + .bascet-item {
+  margin-top: 20px;
+}
+
+.basket-item-title {
+  margin: 0;
+  padding: 0;
+  width: 151px;
+}
+
+.basket-image {
+  margin-right: 23px;
+}
+
+.basket-item-button {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.bascet-item .basket-item-button {
+  padding-left: 24px;
+  background-image: url("../images/header-images/basket-item-button.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.number-product-input {
+  width: 20px;
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #000000;
+  border: none;
+  appearance: textfield;
+  text-align: center;
+}
+
+.basket-label:last-child .number-product-input {
+  width: 58px;
+}
+
+.basket-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.number-product-input::-webkit-outer-spin-button,
+.number-product-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.button-basket-form {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 14.5px 25px;
+  flex-wrap: nowrap;
+}

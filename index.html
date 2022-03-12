@@ -606,7 +606,9 @@ class="short-description-device-description-item">Самая длинная па
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group field-icon">
               <h3 class="auth-form-title">Ваше имя:</h3>
-              <label class="visually-hidden" for="auth-form-name">Введите имя</label>
+              <label class="visually-hidden" for="auth-form-name">Введите имя
+                
+              </label>
               <input class="auth-form-field field" type="text" id="auth-form-name" name="auth-form-name" placeholder="Введите имя">
           
               <span>Добавьте имя</span>
@@ -631,11 +633,19 @@ class="short-description-device-description-item">Самая длинная па
 
 
                 <h3 class="auth-form-title meaning-title">Количество:</h3>
+                <div class="popover popover-auth">
+                  <h2 class="visually-hidden popover-title">Количество товара</h2>
+
+                </div>
                 <div class="auth-meaning-container">
+                  
                   <button class="auth-meaning meaning-min" type="button">
                   <span class="visually-hidden">Изменить минимальное значение</span>
                 </button>
-                <input class="auth-input" type="number" value="1" name="auth-input">
+                <label for="meaning-namber">
+                   <input class="auth-input" type="number" value="1" name="auth-input" id="meaning-namber">
+                </label>
+               
                 <button class="auth-meaning meaning-max" type="button">
                   <span class="visually-hidden">Изменить максимальное значение</span>
                 </button>

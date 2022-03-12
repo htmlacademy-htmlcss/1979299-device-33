@@ -2404,12 +2404,12 @@ pagination-disabled {
   z-index: 2;
 }
 
- 
-/* .modal-container-close {
+/*  
+.modal-container-close {
   display: none;
-}
+} */
 
-  */
+ 
 .modal {
   position: relative;
   margin: auto;
@@ -2469,7 +2469,7 @@ pagination-disabled {
   margin-bottom: 42px;
 }
 
-.auth-form .field {
+.auth-form-field {
   width: 360px;
   height: 60px;
   padding: 20px;
@@ -2478,11 +2478,11 @@ pagination-disabled {
   border: none;
 }
 
-.auth-form .field:last-child {
+.auth-form-field:last-child {
   width: 540px;
 }
 
-.auth-form .field::placeholder {
+.auth-form-field::placeholder {
   position: relative;
   font-family: "rubik", sans-serif;
   font-weight: 400;
@@ -2610,7 +2610,7 @@ pagination-disabled {
   margin: 0;
 }
 
-.auth-input {
+label .auth-input {
   margin: 0;
   padding: 0;
 }
@@ -2634,8 +2634,9 @@ pagination-disabled {
   transform: rotate(90deg);
 }
 
-.auth-input {
+label .auth-input {
   width: 60px;
+  height: 60px;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -2649,8 +2650,8 @@ pagination-disabled {
   
 }
 
-.auth-input::-webkit-outer-spin-button,
-.auth-input::-webkit-inner-spin-button {
+label .auth-input::-webkit-outer-spin-button,
+label .auth-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }

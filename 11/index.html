@@ -47,6 +47,55 @@
           <div class="in-the-basket">2</div>
           
           <a class="navigation-link" href="#">Корзина</a>
+
+          <div class="popover-basket popover-open">
+            <h2 class="visually-hidden popover-title">Количество товара в корзине</h2>
+            <!-- <button class="popover-basket-close-button visually-hidden">
+  
+            <span class="visually-hidden">Закрыть</span>
+            </button> -->
+
+
+            <div class="popover-content">
+             <ul class="basket-items-list">
+                    <li class="bascet-item">
+                      <img class="product-card-image basket-image" src="images/catalog-images/product/product-1.jpg" width="39" height="43" alt="Любительская
+              селфи-палка">
+                      <p class="basket-item-title">Любительская селфи-палка</p>
+
+                      <button type="button" class="basket-item-button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+
+                    <li class="bascet-item">
+                      <img class="product-card-image basket-image" src="images/catalog-images/product/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                      <p class="basket-item-title">Профессиональная
+                        селфи-палка</p>
+
+                      <button type="button" class="basket-item-button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div class="basket-inputs">
+                    <label class="basket-label">
+                      Товаров:<input class="number-product-input" type="number" value="2" name="number-product-input">
+                    </label>
+                    <label class="basket-label">
+                      Сумма:<input class="number-product-input" type="number" value="2000" name="number-product-input">₽
+                    </label>
+                  </div>
+                  <form class="basket-form" action="#" method="post">
+                  
+                    <button class="button-basket-form" type="submit">
+                      <span class="visually-hidden">Открыть корзину</span>Открыть корзину
+                      <button>
+                  </form>
+            </div>
+           
+          </div>
         </li>
       </ul> 
       
@@ -632,29 +681,39 @@ class="short-description-device-description-item">Самая длинная па
               </div>
             </form>
 
+                <div class="meaning-title-container">
+                  <h3 class="auth-form-title meaning-title">Количество:</h3>
+                  <div class="popover popover-auth popover-open">
+                    <h2 class="visually-hidden popover-title">Количество товара</h2>
+                    <button class="popover-close-button visually-hidden">
+          
+                    <span class="visually-hidden">Закрыть</span>
+                    </button>
+                    <div class="popover-content">
+                      <p>
+                      Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                      </p>
+                    </div>
+                   
+                  </div>
 
-                <h3 class="auth-form-title meaning-title">Количество:</h3>
-                <div class="popover popover-auth">
-                  <h2 class="visually-hidden popover-title">Количество товара</h2>
 
-                </div>
-                <div class="auth-meaning-container">
+                  <div class="auth-meaning-container">
                   
                   <button class="auth-meaning meaning-min" type="button">
                   <span class="visually-hidden">Изменить минимальное значение</span>
-                </button>
-                <label for="meaning-namber">
+                  </button>
+                    <label for="meaning-namber">
                    <input class="auth-input" type="number" value="1" name="auth-input" id="meaning-namber">
-                </label>
+                  </label>
                
-                <button class="auth-meaning meaning-max" type="button">
+                    <button class="auth-meaning meaning-max" type="button">
                   <span class="visually-hidden">Изменить максимальное значение</span>
-                </button>
-
-                
-               
+                  </button>
               
-            </div>
+                  </div>
+                </div>
+                
           </div>
           <button class="gallery-more auth-more" type="button">Отправить</button>
         </section>

@@ -1345,6 +1345,7 @@ div .navigation-link {
   left: -40px;
   top: -2px;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .control:hover .control-mark, 
@@ -1357,6 +1358,10 @@ div .navigation-link {
   opacity: 0.3;
 }
 
+.control-input:disabled + .control-mark {
+  opacity: 0.1;
+}
+
 
 .control-input:disabled + .control-mark + .control-label {
   opacity: 0.1;
@@ -1367,14 +1372,13 @@ div .navigation-link {
   content: "";
   width: 24px;
   height: 24px;
-  left: -2px;
-  bottom: -2px;
-
+  left: -4px;
+  bottom: -4px;
 }
 
-.control-input:focus + .control-mark::before {
+.control-input[type="checkbox"]:focus + .control-mark::before {
   outline: 2px solid #AF4FFF;
-  outline-offset: 8px;
+  outline-offset: 2px;
   
 }
 
@@ -1386,8 +1390,8 @@ div .navigation-link {
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   background-image: url("../images/catalog-images/checked.svg");
-  left: 5px;
-  bottom: 5px;
+  left: 3px;
+  bottom: 3px;
   width: 10px;
   height: 10px;
   
@@ -1404,8 +1408,8 @@ div .navigation-link {
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 4px;
+  left: 4px;
   width: 8px;
   height: 8px;
   background-color: #000000;
@@ -1416,15 +1420,15 @@ div .navigation-link {
 .control-input[type="radio"] + .control-mark::after {
   position: absolute;
   content: "";
-  width: 24px;
-  height: 24px;
-  left: -2px;
-  bottom: -2px;
-  
+  width: 22px;
+  height: 22px;
+  left: -3px;
+  bottom: -3px;
 }
 
 .control-input[type="radio"]:focus + .control-mark::after {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 
@@ -1846,6 +1850,7 @@ div .about-us-link:focus-visible {
   border-radius: 50%;
   left: 3px;
   bottom: -12px;
+  box-sizing: border-box;
 
 }
 
@@ -1865,7 +1870,7 @@ div .about-us-link:focus-visible {
   opacity: 0.6;
 }
 
-.select:hover .select-control-mark {
+.select:active .select-control-mark {
   opacity: 0.3;
 }
 
@@ -1958,8 +1963,13 @@ div .about-us-link:focus-visible {
   width: 30px;
 }
 
+.range-input:input:focus-visible {
+  outline: none;
+}
 
-
+.catalog-filter-label:focus-within {
+  outline: 2px solid #AF4FFF;
+}
 
 .catalog-filter-label:last-child input {
   width: 58px;
@@ -2401,7 +2411,7 @@ pagination-disabled {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color:gba(240, 240, 240, 0.9);
   z-index: 2;
 }
 
@@ -2477,6 +2487,7 @@ pagination-disabled {
   box-sizing: border-box;
   background-color: #F0F0F0;
   border: none;
+  font-size: 16px;
 }
 
 .auth-form-field:last-child {
@@ -2510,15 +2521,20 @@ pagination-disabled {
   opacity: 0.3;
 }
 
+.auth-form .field:disabled + label::before {
+  opacity: 0.3;
+}
+
 .auth-form .fiel:disabled .auth-form-title::before {
   opacity: 0.3;
 }
 
 .auth-form .field:invalid {
   border: 2px solid #FF3D3D;
+  
 }
 
-.auth-form .field:invalid .field-group span {
+.auth-form .field:invalid + span {
   color: #FF3D3D;
 }
 
@@ -2541,7 +2557,7 @@ pagination-disabled {
   
 }
 
-.field-icon:last-child .auth-form-title::before {
+.field-icon:last-child .auth-form-title + label::before {
   position: absolute;
   content: "";
   width: 15px;
@@ -2591,6 +2607,11 @@ pagination-disabled {
   letter-spacing: -0.02em;
   color: inherit;
 }
+
+.auth-form-title:hover + .popover {
+  display: block;
+}
+
 
 .field-group span {
   font-family: "rubik", sans-serif;
@@ -2745,7 +2766,7 @@ label .auth-input:focus {
   margin: 0;
   width: 320px;
   min-height: 300px;
-  display: none;
+  /* display: none; */
 }
 
 .popover-basket::before {
@@ -2770,6 +2791,13 @@ label .auth-input:focus {
   justify-content: space-between;
 }
 
+.bascet-item a {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+}
+
 .bascet-item:hover {
   opacity: 0.6;
 }
@@ -2778,14 +2806,14 @@ label .auth-input:focus {
   opacity: 0.3;
 }
 
-.bascet-item:focus-visible {
+.bascet-item a:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
 
 
 .bascet-item + .bascet-item {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -2812,26 +2840,17 @@ label .auth-input:focus {
 }
 
 .bascet-item .basket-item-button {
-  padding-left: 24px;
+  
   background-image: url("../images/header-images/basket-item-button.svg");
   background-repeat: no-repeat;
-  background-position: 10px center;
+  background-position: 0 center;
 }
 
-.basket-item-button::before {
-  position: absolute;
-  content: "";
-  width: 14px;
-  height: 14px;
-  z-index: 2;
-  left: 8px;
-  bottom: -2px;
-  
-  
-}
+
 
 .bascet-item .basket-item-button:focus {
-  outline: none;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .number-product-input {
@@ -2841,7 +2860,7 @@ label .auth-input:focus {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  background: #000000;
+  background: #1a1a1a;
   border: none;
   appearance: textfield;
   text-align: center;
@@ -2859,7 +2878,13 @@ label .auth-input:focus {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  margin-bottom: 20px;
+  height: 44px;
+  align-items: center;
+  background: #1A1A1A;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .number-product-input::-webkit-outer-spin-button,

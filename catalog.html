@@ -42,6 +42,59 @@
           <div class="in-the-basket">2</div>
             
             <a class="navigation-link" href="#">Корзина</a>
+
+            <div class="popover-basket popover-open">
+              <h2 class="visually-hidden popover-title">Количество товара в корзине</h2>
+  
+              <div class="popover-content">
+                <ul class="basket-items-list">
+                       <li class="bascet-item">
+                       
+                         <a href="#">
+                           <img class="product-card-image basket-image" src="images/catalog-images/product/product-1.jpg" width="39" height="43" alt="Любительская
+                 селфи-палка">
+                         <p class="basket-item-title">Любительская селфи-палка</p>
+                         </a>
+                           
+                         
+   
+                         <button type="button" class="basket-item-button">
+                           <span class="visually-hidden">Удалить из корзины</span>
+                         </button>
+                       </li>
+   
+                       <li class="bascet-item">
+                         <a href="#">
+                           <img class="product-card-image basket-image" src="images/catalog-images/product/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                         <p class="basket-item-title">Профессиональная
+                           селфи-палка</p>
+                         </a>
+                         
+   
+                         <button type="button" class="basket-item-button">
+                           <span class="visually-hidden">Удалить из корзины</span>
+                         </button>
+                       </li>
+                     </ul>
+   
+                     <div class="basket-inputs">
+                       <label class="basket-label">
+                         Товаров:<input class="number-product-input" type="number" value="2" name="number-product-input">
+                       </label>
+                       <label class="basket-label">
+                         Сумма:<input class="number-product-input" type="number" value="2000" name="number-product-input">₽
+                       </label>
+                     </div>
+                     <form class="basket-form" action="#" method="post">
+                     
+                       <button class="button-basket-form" type="submit">
+                         <span class="visually-hidden">Открыть корзину</span>Открыть корзину
+                       </button>
+                     </form>
+               </div>
+             
+            </div>
+
         </li>
       </ul> 
     
@@ -414,6 +467,89 @@
   
     </div>
   </footer>
+
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Доставка под заказ</h2>
+
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group field-icon">
+            <h3 class="auth-form-title">Ваше имя:</h3>
+            <label class="visually-hidden" for="auth-form-name">Введите имя
+              
+            </label>
+            <input class="auth-form-field field" type="text" id="auth-form-name" name="auth-form-name" placeholder="Введите имя">
+        
+            <span>Добавьте имя</span>
+          </div>
+          <div class="field-group field-icon">
+            <h3 class="auth-form-title">Ваш e-mail:</h3>
+            <label class="visually-hidden" for="auth-form-mail">Введите e-mail</label>
+            <input class="auth-form-field field" type="email" id="auth-form-mail" name="auth-form-mail" placeholder="почта">
+            
+            <span>Забавный у вас адрес</span>
+          
+          </div>
+        </form>
+
+
+
+        
+
+        <div class="auth-bring-container">
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <h3 class="auth-form-title">Что нужно привезти:</h3>
+              <label class="visually-hidden" for="auth-form-bring">Что нужно привезти</label>
+              <input class="auth-form-field field" type="text" id="auth-form-bring" name="auth-form-bring" placeholder="В свободной форме">
+            </div>
+          </form>
+
+              <div class="meaning-title-container">
+                <h3 class="auth-form-title meaning-title">Количество:</h3>
+                <div class="popover popover-auth popover-open">
+                  <h2 class="visually-hidden popover-title">Количество товара</h2>
+                  <button class="popover-close-button visually-hidden">
+        
+                  <span class="visually-hidden">Закрыть</span>
+                  </button>
+                  <div class="popover-content">
+                    <p>
+                    Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                    </p>
+                  </div>
+                 
+                </div>
+
+
+                <div class="auth-meaning-container">
+                
+                <button class="auth-meaning meaning-min" type="button">
+                <span class="visually-hidden">Изменить минимальное значение</span>
+                </button>
+                  <label for="meaning-namber">
+                 <input class="auth-input" type="number" value="1" name="auth-input" id="meaning-namber">
+                </label>
+             
+                  <button class="auth-meaning meaning-max" type="button">
+                <span class="visually-hidden">Изменить максимальное значение</span>
+                </button>
+            
+                </div>
+              </div>
+              
+        </div>
+        <button class="gallery-more auth-more" type="button">Отправить</button>
+      
+      </section>
+
+    </div>
+
+  </div>
 
 </body>
 </html>

@@ -751,7 +751,7 @@ div .navigation-link {
   line-height: 30px;
   color: #000000;
   background-color: inherit;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
   text-align: center;
   text-decoration: none;
   width: 56px;
@@ -770,6 +770,21 @@ div .navigation-link {
   text-decoration: none;
   text-align: center;
 }
+
+.exit {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  background-color: inherit;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-decoration: none;
+  width: 56px;
+  margin-left: 0;
+}
+
 
 .main-container {
   flex-grow: 1;
@@ -2413,14 +2428,14 @@ pagination-disabled {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color:gba(240, 240, 240, 0.9);
+  background-color:rgba(240, 240, 240, 0.9);
   z-index: 2;
 }
 
  
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
  
 .modal {
@@ -2564,11 +2579,11 @@ pagination-disabled {
   
 }
 
-.field-icon:last-child .auth-form-title + label {
+.field-icon:last-child .auth-form-title + input + label {
   position: relative;
 }
 
-.field-icon:last-child .auth-form-title + label::before {
+.field-icon:last-child .auth-form-title + input + label::before {
   position: absolute;
   content: "";
   width: 15px;
@@ -2577,7 +2592,7 @@ pagination-disabled {
   background-repeat: no-repeat;
   background-position: center;
   left: 320px;
-  top: 5px;
+  bottom: 45px;
   
 }
 

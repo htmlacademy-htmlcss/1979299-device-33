@@ -653,41 +653,43 @@ class="short-description-device-description-item">Самая длинная па
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <section class="modal-content">
+        < class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
 
-          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="field-group field-icon">
+          <form action="https://echo.htmlacademy.ru/" method="post">
+
+            <div class="auth-form">
+              <div class="field-group field-icon">
               <h3 class="auth-form-title">Ваше имя:</h3>
-              <label class="visually-hidden" for="auth-form-name">Введите имя
-                
-              </label>
+              <label for="auth-form-name"></label>
               <input class="auth-form-field field" type="text" id="auth-form-name" name="auth-form-name" placeholder="Введите имя">
           
               <span>Добавьте имя</span>
             </div>
             <div class="field-group field-icon">
               <h3 class="auth-form-title">Ваш e-mail:</h3>
-              <label class="visually-hidden" for="auth-form-mail">Введите e-mail</label>
+              <label for="auth-form-mail"></label>
               <input class="auth-form-field field" type="email" id="auth-form-mail" name="auth-form-mail" placeholder="почта">
               
               <span>Забавный у вас адрес</span>
             
             </div>
-          </form>
 
-
+            </div>
 
           
 
           <div class="auth-bring-container">
-            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="field-group">
+            
+              <div class="auth-form">
+                <div class="field-group">
                 <h3 class="auth-form-title">Что нужно привезти:</h3>
                 <label class="visually-hidden" for="auth-form-bring">Что нужно привезти</label>
                 <input class="auth-form-field field" type="text" id="auth-form-bring" name="auth-form-bring" placeholder="В свободной форме">
               </div>
-            </form>
+              </div>
+              
+          
 
                 <div class="meaning-title-container">
                   <h3 class="auth-form-title meaning-title">Количество:</h3>
@@ -723,8 +725,8 @@ class="short-description-device-description-item">Самая длинная па
                 </div>
                 
           </div>
-          <button class="gallery-more auth-more" type="button">Отправить</button>
-        
+          <button class="gallery-more auth-more" type="submit">Отправить</button>
+        </form>
         </section>
 
       </div>

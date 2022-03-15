@@ -1957,6 +1957,7 @@ div .about-us-link:focus-visible {
   padding: 0;
   font: inherit;
   text-align: center;
+  color: rgba(0, 0, 0, 0.3);
   background-color: transparent;
   border: none;
   appearance: textfield;
@@ -1976,7 +1977,7 @@ div .about-us-link:focus-visible {
 }
 
 .catalog-filter-label {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -2417,9 +2418,9 @@ pagination-disabled {
 }
 
  
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
  
 .modal {

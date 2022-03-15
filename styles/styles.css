@@ -2418,9 +2418,9 @@ pagination-disabled {
 }
 
  
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
  
 .modal {
@@ -2781,7 +2781,7 @@ label .auth-input:focus {
   margin: 0;
   width: 320px;
   min-height: 300px;
-  display: none;
+  /* display: none; */
 }
 
 .popover-basket::before {
@@ -2935,7 +2935,8 @@ label .auth-input:focus {
 }
 
 .button-basket-form:active {
-  color: rgba(0, 0, 0, 0.3);
+  background: #FFE17F;
+  opacity: 0.3;
 }
 
 .button-basket-form:focus {

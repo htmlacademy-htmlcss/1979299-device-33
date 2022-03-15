@@ -2936,7 +2936,7 @@ label .auth-input:focus {
 
 .button-basket-form:active {
   background: #FFE17F;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .button-basket-form:focus {

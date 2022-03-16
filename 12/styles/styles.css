@@ -1875,11 +1875,11 @@ div .about-us-link:focus-visible {
 
 
 
-.select:hover .select-control-mark {
+.select-input:hover + .select-control-mark {
   opacity: 0.6;
 }
 
-.select:active .select-control-mark {
+.select-input:active + .select-control-mark {
   opacity: 0.3;
 }
 
@@ -2427,9 +2427,9 @@ pagination-disabled {
 }
 
  
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
  
 .modal {

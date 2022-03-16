@@ -139,21 +139,21 @@
             <div class="select-container">
               <button class="gallery-more" type="button">Подробнее</button>
               <form action="https://echo.htmlacademy.ru">
-
-
-                <label class="select visually-hidden" for="select-left">Выбор продукта в галереи</label>
-                  <input class="select-input" type="radio" name="select" value="select-left" id="select-left" checked>                  
+                <label class="select">
+                  <span class="visually-hidden">Выбор описания девайса в галерее</span>
+                  <input class="visually-hidden select-input" type="radio" name="select" value="select-left">               
                   <span class="select-control-mark"></span>
-
-                  
-                <label class="select visually-hidden" for="select-center">Выбор продукта в галереи</label>
-                  <input class="select-input" type="radio" name="select" value="select-center" id="select-center">          
+                </label>
+                <label class="select">
+                  <span class="visually-hidden">Выбор описания девайса в галерее</span>
+                  <input class="visually-hidden select-input" type="radio" name="select" value="select-center" checked>                  
                   <span class="select-control-mark"></span>
-                
-                <label class="select visually-hidden" for="select-right">Выбор продукта галереи</label>
-                  <input class="visually-hidden select-input" type="radio" name="select" value="select-right" id="select-right">
+                </label>
+                <label class="select">
+                  <span class="visually-hidden">Выбор описания девайса в галерее</span>
+                  <input class="visually-hidden select-input" type="radio" name="select" value="select-right">                  
                   <span class="select-control-mark"></span>
-                               
+                </label>               
               </form>
             </div>
             <table class="short-description-slaider-table">
@@ -193,14 +193,17 @@
               <button class="gallery-more" type="button">Подробнее</button>
               <form action="https://echo.htmlacademy.ru">
                 <label class="select">
+                  <span class="visually-hidden">Выбор описания девайса в галерее</span>
                   <input class="visually-hidden select-input" type="radio" name="select" value="select-left">               
                   <span class="select-control-mark"></span>
                 </label>
                 <label class="select">
+                  <span class="visually-hidden">Выбор описания девайса в галерее</span>
                   <input class="visually-hidden select-input" type="radio" name="select" value="select-center" checked>                  
                   <span class="select-control-mark"></span>
                 </label>
                 <label class="select">
+                  <span class="visually-hidden">Выбор описания девайса в галерее</span>
                   <input class="visually-hidden select-input" type="radio" name="select" value="select-right">                  
                   <span class="select-control-mark"></span>
                 </label>               
@@ -244,14 +247,17 @@
               <button class="gallery-more" type="button">Подробнее</button>
               <form action="https://echo.htmlacademy.ru">
                 <label class="select">
+                  <span class="visually-hidden">Выбор описания девайса в галерее</span>
                   <input class="visually-hidden select-input" type="radio" name="select" value="select-left">                
                   <span class="select-control-mark"></span>
                 </label>
                 <label class="select">
+                  <span class="visually-hidden">Выбор описания девайса в галерее</span>
                   <input class="visually-hidden select-input" type="radio" name="select" value="select-center">            
                   <span class="select-control-mark"></span>
                 </label>
                 <label class="select">
+                  <span class="visually-hidden">Выбор описания девайса в галерее</span>
                   <input class="visually-hidden select-input" type="radio" name="select" value="select-right" checked>    
                   <span class="select-control-mark"></span>
                 </label>        
@@ -452,6 +458,7 @@
           <div class="about-us-canteiner">
             <form class="subscription-form" action="https://echo.htmlacademy.ru." method="post">
               <label>
+                <span class="visually-hidden">Введите Ваш email</span>
               <input class="subscription-mail" type="email" name="subscription-mail" placeholder="Ваш e-mail">
               </label>
               <label class="visually-hidden" for="button">Подписаться</label> 
@@ -546,6 +553,7 @@
             <div class="auth-form">
               <div class="field-group field-icon">
               <h3 class="auth-form-title">Ваше имя:</h3>
+              <span class="visually-hidden">Добавьте имя</span>
               <label for="auth-form-name"></label>
               <input class="auth-form-field field" type="text" id="auth-form-name" name="auth-form-name" placeholder="Введите имя">
           
@@ -553,7 +561,7 @@
             </div>
             <div class="field-group field-icon">
               <h3 class="auth-form-title">Ваш e-mail:</h3>
-
+              <span class="visually-hidden">Введите электронную почту</span>
               <input class="auth-form-field field" type="email" id="auth-form-mail" name="auth-form-mail" placeholder="почта">
               <label for="auth-form-mail"></label>
               

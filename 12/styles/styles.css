@@ -825,10 +825,7 @@ div .navigation-link {
 
 .service-user .navigation-link-user:focus {
   outline: 2px solid #af4fff;
-
 }
-
-
 
 .navigation-link-user:hover {
   opacity: 0.6;
@@ -841,7 +838,6 @@ div .navigation-link {
 .navigation-link-user:focus {
   outline: none;
 }
-
 
 .namber-one-device-list {
   margin: 0;
@@ -901,7 +897,7 @@ div .navigation-link {
 .delivery .short-description-device-description-item {
   margin-bottom: 200px;
   margin-top: 34px;
-  width: 475px;
+  width: 454px;
 }
 
 .courier {
@@ -1851,9 +1847,6 @@ div .about-us-link:focus-visible {
 
 .select {
   display: block;
- 
-
-  
 }
 
 .select-control-mark {
@@ -2492,8 +2485,7 @@ pagination-disabled {
   
 }
 
-.auth-form {
-  
+.auth-form {  
   display: flex;
   justify-content: space-between;
   margin-bottom: 42px;

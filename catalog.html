@@ -80,8 +80,9 @@
       <ul class="navigation-list-user"> 
         <li class="navigator-item-user catalog-user"> 
           <a class="navigation-link-user" href="catalog.html">Каталог товаров</a>
-          <span class="visually-hidden">Открыть коталог товаров</span>
-          <button type="button"></button>
+          <button type="button">
+            <span class="visually-hidden">Открыть коталог товаров</span>
+          </button>
           <ul class="catalog-user-list">
             <li class="catalog-user-item">
               <a class="catalog-user-link" href="#">Виртуальная реальность</a>
@@ -382,16 +383,18 @@
           <div class="auth-form">
             <div class="field-group field-icon">
               <h3 class="auth-form-title">Ваше имя:</h3>
-              <label for="auth-form-name"></label>
-                <input class="auth-form-field field" type="text" id="auth-form-name" name="auth-form-name" placeholder="Введите имя">
+              <label for="auth-form-name">
                 <span class="visually-hidden">Добавьте имя</span>
+              </label>
+                <input class="auth-form-field field" type="text" id="auth-form-name" name="auth-form-name" placeholder="Введите имя">
                 <span>Добавьте имя</span>
             </div>
             <div class="field-group field-icon">
               <h3 class="auth-form-title">Ваш e-mail:</h3> 
               <input class="auth-form-field field" type="email" id="auth-form-mail" name="auth-form-mail" placeholder="почта">
-              <span class="visually-hidden">Введите электронную почту</span>
-              <label for="auth-form-mail"></label>             
+              <label for="auth-form-mail">
+                <span class="visually-hidden">Введите электронную почту</span>
+              </label>             
               <span>Забавный у вас адрес</span> 
             </div>
           </div> 

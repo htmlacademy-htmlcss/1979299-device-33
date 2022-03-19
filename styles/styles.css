@@ -263,6 +263,10 @@ body {
   background: #ffe17f;
 }
 
+.page-header-catalog {
+  height: 186px;
+}
+
 div .navigation-link:hover {
   opacity: 0.6;
 }
@@ -365,12 +369,13 @@ div .navigation-link {
 }
 
 .come-in {
-  width: 231px;
+  width: 150px;
   margin-left: 22px;
 }
 
 .exit-item {
-  margin-right: 2px;
+  margin-left: -3px;
+  margin-right: -2px;
 }
 
 .compare {
@@ -1350,7 +1355,7 @@ div .navigation-link {
   width: 20px;
   height: 20px;
   border: 2px solid #CCCCCC;
-  left: -40px;
+  left: -37px;
   top: -2px;
   border-radius: 3px;
   box-sizing: border-box;
@@ -1700,7 +1705,7 @@ div .navigation-link {
 div .monopod-header {
   margin: 0;
   padding: 0;
-  margin-top: 35px;
+  margin-top: 33px;
   margin-bottom: 16px;
   margin-left: 50px;
 }
@@ -1736,7 +1741,7 @@ div .monopod-header {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin-bottom: 60px;
+  margin-bottom: 72px;
 }
 
 div .about-us-link {
@@ -1775,7 +1780,7 @@ div .about-us-link:focus-visible {
 .sorting div {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 }
    
 .sorting {
@@ -1783,8 +1788,9 @@ div .about-us-link:focus-visible {
 }
 
 .sorting .filter-title {
-  margin-top: 5px;
+  margin-top: 2px;
   margin-bottom: 0px;
+  margin-left: 40px;
 }
 
 .button-sorting {
@@ -1797,10 +1803,12 @@ div .about-us-link:focus-visible {
   opacity: 0.2;
   width: 30px;
   height: 30px;
+  margin-top: -2px;
 }
 
 .button-sorting:last-child {
   transform: rotate(180deg);
+  margin-right: 40px;
 }
 
 .button-sorting:hover {
@@ -1903,8 +1911,10 @@ div .about-us-link:focus-visible {
   padding-right: 50px;
   background-image: url("../images/catalog-images/select-control.svg");
   background-repeat: no-repeat;
-  background-position: right 12px center;
+  background-position: right 10px center;
   appearance: none;
+  margin-top: -3px;
+  margin-left: -1px;
 }
 
 .select-control:hover {
@@ -1931,11 +1941,16 @@ div .about-us-link:focus-visible {
 
 .filter-container > div {
   width: 320px;
-  margin-top: 12px;
+  margin-top: 9px;
+  margin-left: 60px;
+}
+
+.catalorg-filter {
+  margin-left: -2px;
 }
 
 .catalog-filter-item {
-  margin-bottom: 11px;
+  margin-bottom: 18px;
 }
 
 .range-input {
@@ -1951,6 +1966,7 @@ div .about-us-link:focus-visible {
   border: none;
   appearance: textfield;
   width: 30px;
+  margin-left: -7px;
 }
 
 .range-input:focus-visible {
@@ -1981,6 +1997,7 @@ div .about-us-link:focus-visible {
 
 .catalog > div {
   width: 1160px;
+  margin-left: 150px;
 }
 
 .catalog-filter-group,
@@ -1988,18 +2005,21 @@ div .about-us-link:focus-visible {
   list-style-type: none;
 }
 
-.catalog-filter-group {
-  border: none;
+.catalog-filter-list {
+  margin: 0;
+  padding-left: 36px;
 }
 
 .price-range {
   margin: auto;
+  margin-left: -8px;
+  margin-top: 8px;
 }
 
 .range-scale {
   position: relative;
   height: 2px;
-  margin-bottom: 11px;
+  margin-bottom: 4px;
   background-color: #DCDCDC;
   width: 200px;
 }
@@ -2062,10 +2082,12 @@ div .about-us-link:focus-visible {
 
 .catalog-filter-group {
   position: relative;
+  border: none;
+  padding: 0;
 }
 
 .catalog-filter-group:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 
 .catalog-filter-group::before {
@@ -2074,7 +2096,7 @@ div .about-us-link:focus-visible {
   width: 200px;
   height: 2px;
   background: #000000;
-  top: -49px;
+  top: -54px;
 }
 
 
@@ -2082,11 +2104,30 @@ div .about-us-link:focus-visible {
   display: flex;
   margin-right: 67px;
   margin-top: 7px;
+  margin-left: -7px;
 }
 
 .catalog-filter-label:last-child {
   display: flex;
   margin-top: 3px;
+  margin-left: -5px;
+}
+
+.catalog-filter-group:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.catalog-filter-group:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.filter-item-radio {
+  margin-bottom: 21px;
+}
+
+.catalog-filter-group + .about-us-link {
+  margin-top: 18px;
+  margin-left: 4px;
 }
 
 .product {
@@ -2099,9 +2140,8 @@ div .about-us-link:focus-visible {
   display: grid;
   grid-template-columns: repeat(2, 360px);
   list-style-type: none;
-  margin: 0;
   padding: 0;
-  gap: 44px;
+  gap: 44px 40px;
   margin: 70px 40px 44px;
 }
 
@@ -2112,6 +2152,7 @@ div .about-us-link:focus-visible {
 .product-card .about-us-name {
   margin-top: 32px;
   margin-bottom: 0;
+  width: 200px;
 }
 
 .product-card-link {
@@ -2236,6 +2277,8 @@ div .about-us-link:focus-visible {
 .product-card-price {
   align-self: center;
   text-align: right;
+  margin-top: 18px;
+  margin-right: 2px;
 }
 
 .monopods-list {

@@ -369,6 +369,10 @@ div .navigation-link {
   margin-left: 22px;
 }
 
+.exit-item {
+  margin-right: 2px;
+}
+
 .compare {
   width: 105px;
   margin-left: 23px;
@@ -1040,8 +1044,8 @@ div .navigation-link {
 
 .about-us-item {
   position: relative;
-  margin-bottom: 19px;
-  padding-left: 26px;
+  margin-bottom: 15px;
+  padding-left: 36px;
 }
 
 .about-us-item:last-child {
@@ -1064,7 +1068,7 @@ div .navigation-link {
 .about-us-link {
   position: relative;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 27px;
   font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -1081,6 +1085,7 @@ div .navigation-link {
 
 .about-us .about-us-link {
   width: 270px;
+  margin-left: -10px;
 }
 
 .about-us .about-us-link::before {
@@ -1126,6 +1131,7 @@ div .navigation-link {
 .contacts .about-us-link {
   margin-top: 0;
   width: 260px;
+  margin-left: -11px;
 }
 
 .contacts .about-us-link:hover {
@@ -1172,6 +1178,7 @@ div .navigation-link {
   width: 348px;
   margin: 0;
   padding: 0;
+  margin-left: 8px;
 }
 
 .about-us .about-us-title::before,
@@ -1185,8 +1192,9 @@ div .navigation-link {
 }
 
 .about-us-canteiner > .about-us-paragraph {
-  width: 529px;
-  margin-left: 16.5px;
+  width: 528px;
+  padding-top: 9px;
+  padding-right: 27px;
 }
 
 .contacts-phone-link {
@@ -1469,7 +1477,7 @@ div .navigation-link {
 
 .footer-logo-container {
   display: flex;
-  margin-top: 62px;
+  margin-top: 60px;
   margin-bottom: 35px;
 }
 
@@ -1497,7 +1505,12 @@ div .navigation-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 63px;
+  margin-bottom: 34px;
+}
+
+.footer-address {
+  margin-top: -2px;
+  max-width: 240px;
 }
 
 .footer-contacts-address {
@@ -1505,6 +1518,11 @@ div .navigation-link {
   color: #ffffff;
   font-style: normal;
   width: 240px;
+}
+
+.fotter-scroll {
+  margin-left: -79px;
+  margin-bottom: 9px;
 }
 
 .fotter-scroll-list {
@@ -1545,6 +1563,7 @@ div .navigation-link {
 .footer-contacts-address-phone {
   color: #ffffff;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-contacts-address-phone:hover {
@@ -1568,6 +1587,10 @@ div .navigation-link {
   margin-bottom: 61px;
 }
 
+.footer-social {
+  margin-left: -31px
+}
+
 .footer-social-list {
   position: relative;
   display: flex;
@@ -1580,6 +1603,7 @@ div .navigation-link {
   width: 40px;
   height: 40px;
   margin: 15px;
+  margin-right: 0;
 }
 
 .social-link {
@@ -1654,7 +1678,7 @@ div .navigation-link {
 
 .htmlacademy-link {
   display: flex;
-  width: 119px;
+  width: 115px;
   height: 37px;
   align-items: center;
   fill: #ffc700;

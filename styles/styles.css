@@ -2158,7 +2158,7 @@ div .about-us-link:focus-visible {
 .product-card .about-us-name {
   margin-top: 32px;
   margin-bottom: 0;
-  width: 200px;
+  width: 220px;
 }
 
 .product-card-link {
@@ -2172,6 +2172,7 @@ div .about-us-link:focus-visible {
   background-color: inherit;
   text-decoration: none;
 }
+
 
 .product-card-link:hover .about-us-name {
   opacity: 0.6;
@@ -2280,6 +2281,21 @@ div .about-us-link:focus-visible {
   grid-column: 1/-1;
 }
 
+.new {
+  position: absolute;
+  background-image: url("../images/catalog-images/new.svg");
+  width: 60px;
+  height: 60px;
+  top: 24px;
+  right: 24px;
+}
+
+.product-card-link:hover .new,
+.product-card-link:active .new {
+  opacity: 0.2;
+}
+
+
 .product-card-price {
   align-self: center;
   text-align: right;
@@ -2358,6 +2374,8 @@ pagination-disabled {
 }
 
 .pagination-link-namber {
+  display: block;
+  box-sizing: border-box;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;

@@ -1198,9 +1198,9 @@ div .navigation-link {
 }
 
 .about-us-canteiner > .about-us-paragraph {
-  width: 528px;
+  width: 552px;
   padding-top: 9px;
-  padding-right: 27px;
+  
 }
 
 .contacts-phone-link {
@@ -1709,8 +1709,7 @@ div .monopod-header {
   margin: 0;
   padding: 0;
   margin-top: 33px;
-  margin-bottom: 16px;
-  margin-left: 50px;
+  margin-bottom: 15px;
 }
 
 .monopods-link {
@@ -2002,8 +2001,8 @@ div .about-us-link:focus-visible {
 }
 
 .catalog > div {
-  width: 1160px;
-  margin-left: 150px;
+  width: 1038px;
+  margin: 0 auto;
 }
 
 .catalog-filter-group,
@@ -2308,8 +2307,8 @@ div .about-us-link:focus-visible {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 50px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
+  margin-left: -2px;
   width: 541px;
   justify-content: flex-start;
   list-style-type: none;
@@ -2317,7 +2316,7 @@ div .about-us-link:focus-visible {
 
 .monopods-item {
   position: relative;
-  padding-right: 36px;
+  padding-right: 38px;
 }
 
 .monopods-item:nth-child(1)::after,
@@ -2327,7 +2326,7 @@ div .about-us-link:focus-visible {
   background-image: url(../images/catalog-images/breadcrumbs.svg);
   width: 4px;
   height: 7px;
-  right: 18px;
+  right: 16px;
   bottom: 8px;
 }
 

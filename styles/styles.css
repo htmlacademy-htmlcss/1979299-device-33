@@ -2020,6 +2020,7 @@ div .about-us-link:focus-visible {
   margin: auto;
   margin-left: -8px;
   margin-top: 8px;
+  max-width: 200px;
 }
 
 .range-scale {
@@ -2385,7 +2386,11 @@ pagination-disabled {
   text-decoration: none;
   opacity: 0.3;
   margin: 0;
-  padding: 10px 16.5px;
+  padding: 10px 15px;
+}
+
+.pagination-link-namber-ten {
+  padding: 10px 11px;
 }
 
 .pagination-link-namber:hover {
